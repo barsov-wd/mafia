@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import 'base/variables';
+@import 'libs/swiper.min';
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: inherit;
+}
+
+.container {
+    width: 1420px;
+    margin: 0 auto;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.counter__wrapper {
+    width: 80px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #828282;
+    border-radius: 15px;
+}
+.items__control,
+.items__current {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    color: #828282;
+    cursor: pointer;
+}
+.items__control-minus {
+    margin-right: 10px;
+}
+.items__control-plus {
+    margin-left: 10px;
+}
+
+.slider-container {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Лента с фото, имеет неограниченную ширину и тип flex, чтобы картинки не переносились */
+.slider-track {
+    height: 600px;
+    display: flex;
+    transition-duration: .5s;
+}
+
+/* Стили для оформления кнопок prev/next */
+.arrow {
+    width: 7px;
+    height: 7px;
+    border-top: #cacaca 3px solid;
+    border-right: #cacaca 3px solid;
+    position: absolute;
+}
+
+.arrow-bg {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    position: relative;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.arrow-left .arrow {
+    transform: rotate(-135deg);
+    top: 10px;
+    left: 12px;
+}
+
+.arrow-right .arrow {
+    transform: rotate(45deg);
+    top: 10px;
+    left: 8px;
+}
+
+.arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/slider";
+@import 'blocks/pizza';
+@import 'blocks/radio-switch';
+@import 'blocks/titles';
+@import 'blocks/button-card';
+@import 'blocks/set';
+@import 'blocks/burgers';
+@import 'blocks/combo';
+@import 'blocks/snacks';
+@import 'blocks/drinks';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/media';

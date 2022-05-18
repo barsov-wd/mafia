@@ -1,0 +1,348 @@
+@media (max-width: 1650px) {
+    .container {
+        width: 1380px;
+    }
+    .pizza {
+        position: relative;
+        z-index: 3;
+        &__absolute-mafia {
+            img {
+                width: 430px;
+            }
+        }
+        &__absolute-right {
+            bottom: -245px;
+            img {
+                z-index: -1;
+                width: 500px;
+            }
+        }
+        &-item {
+            &__cheeses-absolute {
+                left: -120px;
+            }
+            &__mafia-image {
+                right: 220px;
+            }
+            &__michigan-image {
+                right: -132px;
+                z-index: -1;
+            }
+        }
+    }
+    .burgers {
+        &-item {
+            &__ben-image {
+                right: -132px;
+            }
+        }
+    }
+    .set {
+        position: relative;
+        z-index: 2;
+    }
+    .pizza__wrapper,
+    .set__wrapper,
+    .burgers__wrapper,
+    .combo__wrapper,
+    .snacks__wrapper,
+    .drinks__wrapper {
+        grid-template-columns: repeat(4, 330px);
+    }
+    .drinks {
+        &-item {
+            &__strawberry-image {
+                right: -420px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .container {
+        width: 1340px;
+    }
+    .promo {
+        .container {
+            width: 1320px;
+        }
+        &-slider {
+            &__image {
+                width: 640px;
+            }
+        }
+        &__arrow-prev {
+            left: -5px;
+        }
+        &__arrow-next {
+            right: -5px;
+        }
+        &__image-absolute {
+            img {
+                width: 90px;
+            }
+        }
+    }
+    .pizza {
+        &__absolute-mafia {
+            img {
+                width: 405px;
+            }
+        }
+        &-item {
+            &__michigan-image {
+                display: none;
+            }
+            &__mafia-image {
+                right: 150px;
+            }
+        }
+        &__wrapper {
+            grid-template-rows: repeat(6, minmax(471px, auto));
+            grid-auto-rows: minmax(471px, auto);
+        }
+    }
+    .set {
+        &__wrapper {
+            grid-auto-rows: minmax(481px, auto);
+        }
+    }
+    .burgers {
+        &-item {
+            &__ben-image {
+                display: none;
+            }
+            &__royal-image {
+                left: -170px;
+            }
+        }
+        &__wrapper {
+            grid-template-rows: repeat(4, minmax(480px, auto));
+            grid-auto-rows: minmax(480px, auto);
+        }
+    }
+    .combo {
+        grid-auto-rows: minmax(490px, auto);
+        &-item {
+            &__one-image {
+                left: -160px;
+                z-index: 0;
+            }
+        }
+    }
+    .snacks {
+        &__image-bottom {
+            bottom: -265px;
+            img {
+                width: 330px;
+            }
+        }
+    }
+    .pizza__wrapper,
+    .set__wrapper,
+    .burgers__wrapper,
+    .combo__wrapper,
+    .snacks__wrapper,
+    .drinks__wrapper {
+        grid-template-columns: repeat(4, 320px);
+    }
+}
+
+@media (max-width: 1500px) {
+    .promo {
+        &__arrow-prev {
+            left: 4px;
+        }
+        &__arrow-next {
+            right: 4px;
+        }
+    }
+}
+
+@media (max-width: 1450px) {
+    .container {
+        max-width: 1280px;
+    }
+    .header {
+        &__selection,
+        &__phone {
+            margin-left: 80px;
+        }
+    }
+    .promo {
+        &-slider {
+            &__image {
+                width: 630px;
+            }
+        }
+    }
+    .pizza__wrapper {
+        grid-template-rows: repeat(6, minmax(456px, auto));
+        grid-auto-rows: minmax(456px, auto);
+    }
+    .pizza__wrapper,
+    .set__wrapper,
+    .burgers__wrapper,
+    .combo__wrapper,
+    .snacks__wrapper,
+    .drinks__wrapper {
+        grid-template-columns: repeat(4, 305px);
+    }
+}
+@media (max-width: 1370px) {
+    .container {
+        width: 1170px;
+    }
+    .header {
+        &__selection,
+        &__phone {
+            margin-left: 70px;
+        }
+    }
+    .promo {
+        .container {
+            width: 1170px;
+        }
+        &-slider {
+            &__image {
+                width: 570px;
+            }
+        }
+        &__arrow-prev {
+            // display: none;
+            left: 10px;
+        }
+        &__arrow-next {
+            // display: none;
+            right: 10px;
+        }
+    }
+    .pizza {
+        padding-top: 110px;
+        &__wrapper {
+            grid-template-columns: repeat(3, 340px);
+            grid-template-rows: repeat(6, minmax(491px, auto));
+            grid-auto-rows: minmax(491px, auto);
+        }
+        &-item {
+            &__cheeses-absolute {
+                left: -440px;
+            }
+        }
+        &__absolute-right {
+            bottom: -265px;
+        }
+    }
+    .set {
+        padding-top: 110px;
+        &__wrapper {
+            grid-template-columns: repeat(3, 340px);
+            grid-auto-rows: minmax(491px, auto);
+            row-gap: 25px;
+        }
+    }
+    .burgers {
+        padding-top: 110px;
+        &__wrapper {
+            grid-template-columns: repeat(3, 340px);
+            grid-template-rows: repeat(4, minmax(500px, auto));
+            grid-auto-rows: minmax(500px, auto);
+        }
+        &-item {
+            &__royal-image {
+                left: -430px;
+            }
+            &__chicken-image {
+                right: -350px;
+            }
+        }
+    }
+    .snacks {
+        padding-top: 110px;
+        &__wrapper {
+            grid-template-columns: repeat(3, 340px);
+            grid-template-rows: repeat(2, minmax(430px, auto));
+            grid-auto-rows: minmax(430px, auto);
+        }
+        &__image-middle {
+            left: 63%;
+        }
+    }
+    .drinks {
+        padding: 110px 0;
+        &__wrapper {
+            grid-template-columns: repeat(3, 340px);
+            grid-template-rows: repeat(3, minmax(475px, auto));
+            grid-auto-rows: minmax(475px, auto);
+        }
+    }
+}
+@media (max-width: 1270px) {
+    .container {
+        width: 1140px;
+    }
+    .header {
+        &__selection,
+        &__phone {
+            margin-left: 65px;
+        }
+    }
+    .promo {
+        .container {
+            width: 1120px;
+        }
+        &-slider {
+            &__image {
+                width: 549px;
+            }
+        }
+        &__arrow-prev {
+            left: 3px;
+        }
+        &__arrow-next {
+            right: 3px;
+        }
+    }
+    .slider {
+        padding-top: 80px;
+        &__item-text {
+            margin-left: 20px;
+        }
+    }
+    .pizza {
+        &__absolute-right {
+            bottom: -248px;
+            img {
+                width: 450px;
+            }
+        }
+    }
+    .burgers {
+        &-item {
+            &__royal-image {
+                left: -475px;
+            }
+        }
+    }
+    .combo {
+        &__image-right {
+            img {
+                width: 230px;
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
+    .promo {
+        .container {
+            width: 960px;
+        }
+        &-slider__image {
+            width: 700px;
+            margin: 0 auto;
+        }
+    }
+}

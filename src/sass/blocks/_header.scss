@@ -1,0 +1,124 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 120px;
+    background-color: #fff;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__selection,
+    &__phone {
+        margin-left: 100px;
+    }
+    &__sity-delivery {
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration: underline;
+        color: $color-gray;
+        cursor: pointer;
+    }
+    &__city {
+        font-size: 18px;
+        line-height: 22px;
+        color: $black-color-red;
+        cursor: pointer;
+    }
+    &__phone-link {
+        position: relative;
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 26px;
+        color: $black-color-red;
+        margin-bottom: 4px;
+        padding: 0 0 0 25px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0px;
+            width: 20px;
+            height: 20px;
+            background: url('../icons/header/icon-phone.svg') center center / cover no-repeat;
+        }
+    }
+    &__operating-time {
+        font-size: 18px;
+        line-height: 22px;
+        color: $color-gray;
+    }
+    &__button {
+        position: relative;
+        width: 190px;
+        height: 45px;
+        background-color: $black-color-red;
+        border: none;
+        border-radius: 15px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+        cursor: pointer;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 7px;
+            right: 70px;
+            width: 1px;
+            height: 31px;
+            background-color: #fff;
+        }
+    }
+    &__button-price {
+        position: relative;
+        margin-left: 45px;
+        &::before {
+            content: '₽';
+            position: absolute;
+            top: -1px;
+            right: -15px;
+        }
+    }
+}
+.nav {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    padding: 19px 0;
+    background: linear-gradient(90deg, #3E0900 0%, #FF2400 100%);
+    z-index: 100;
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        max-width: 975px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__menu-item {
+        position: relative;
+        color: #fff;
+        font-size: 18px;
+        line-height: 22px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 4px;
+            bottom: -19px;
+            background-color: #fff;
+            transition: all .5s;
+        }
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}

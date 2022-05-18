@@ -1,0 +1,42 @@
+.promo {
+    position: relative;
+    padding-top: 220px;
+    background-color: #e5e5e5;
+    &__image-absolute {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    &-slider {
+        &__image {
+            img {
+                max-width: 100%;
+                border-radius: 15px;
+            }
+        }
+        &__wrapper {
+            max-width: 1440px;
+        }
+    }
+    &__arrow-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -40px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    &__arrow-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40px;
+        cursor: pointer;
+    }
+}
+
+.container__wrap {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}

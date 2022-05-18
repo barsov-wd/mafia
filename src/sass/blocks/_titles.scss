@@ -1,0 +1,25 @@
+.title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 61px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black-color-red;
+    &_mb75 {
+        margin-bottom: 75px;
+    }
+}
+.item {
+    &-title {
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: $black-color-red;
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 10px;
+    }
+}
