@@ -48,6 +48,9 @@ new Swiper('.promo-slider', {
     breakpoints: {
         992: {
             slidesPerView: 1
+        },
+        1199: {
+            slidesPerView: 2
         }
     }
 });
@@ -62,6 +65,9 @@ new Swiper('.sliders', {
     breakpoints: {
         992: {
             slidesPerView: 3
+        },
+        1199: {
+            slidesPerView: 4
         }
     }
 });
