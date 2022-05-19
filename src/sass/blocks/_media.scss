@@ -765,7 +765,7 @@
                 max-width: 540px;
             }
             &__image {
-                width: 500px;
+                width: 540px;
                 margin: 0 auto;
             }
         }
@@ -777,6 +777,12 @@
         padding-top: 50px;
         &__arrow-next {
             display: none;
+        }
+        &__image-absolute {
+            bottom: -120px;
+            img {
+                width: 100px;
+            }
         }
     }
     .pizza {
@@ -790,6 +796,11 @@
         }
         &-item {
             text-align: center;
+            &__corleone-image {
+                img {
+                    width: 120px;
+                }
+            }
         }
         &__absolute-right {
             display: none;
@@ -803,6 +814,13 @@
             grid-auto-rows: minmax(491px, auto);
             row-gap: 25px;
             column-gap: 0;
+        }
+        &-item {
+            &__one-image {
+                img {
+                    width: 120px;
+                }
+            }
         }
     }
     .burgers {
@@ -820,8 +838,7 @@
                 display: none;
             }
             &__chicken-image {
-                // right: -240px;
-                display: none;
+               display: none;
             }
         }
     }
@@ -834,6 +851,14 @@
             grid-auto-rows: minmax(510px, auto);
             column-gap: 0;
             row-gap: 25px;
+        }
+        &-item {
+            &__one-image {
+                left: -125px;
+                img {
+                    width: 120px;
+                }
+            }
         }
     }
     .snacks {
@@ -848,6 +873,11 @@
         &__image-middle {
             // left: 63%;
             display: none;
+        }
+        &__image-right {
+            img {
+                width: 60px;
+            }
         }
         &__image-bottom {
             display: none;
@@ -876,17 +906,190 @@
     }
     .header {
         height: 69px;
+        &__wrapper {
+            height: 69px;
+            align-items: center;
+            .humburger {
+                top: 0;
+                right: 0;
+                width: 24px;
+                height: 20px;
+                span {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        &__logo {
+            img {
+                width: 110px;
+            }
+        }
     }
-    .header__wrapper {
-        height: 69px;
-    }
-    .header__logo img{
-        width: 110px;
+    .nav {
+        &__menu-item {
+            font-size: 11px;
+            line-height: 14px;
+        }
+        &__divider {
+            width: 240px;
+        }
+        &__city-text {
+            font-size: 11px;
+            line-height: 14px;
+            padding-left: 28px;
+            &::before {
+                top: -40%;
+            }
+        }
+        &__contacts-title {
+            font-size: 11px;
+            line-height: 14px;
+        }
+        &__contacts-phone {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__contacts-work {
+            font-size: 11px;
+            line-height: 14px;
+        }
+        &__image-absolute {
+            top: 40%;
+            img {
+                width: 100%;
+            }
+        }
+        &__image-icon {
+            img {
+                width: 100%;
+            }
+        }
+        &__close-icon {
+            img {
+                width: 15px;
+                height: 15px;
+            }
+        }
     }
     .promo {
-        display: none;
+        padding-top: 0;
+        .container {
+            width: 100%;
+            padding: 0 10px;
+        }
+        .container__wrap {
+            width: 100%;   
+        }
+        &__image-absolute {
+            display: none;
+        }
+        &-slider__image {
+            margin-left: 0;
+            img {
+                width: 100%;
+                min-width: 223px;
+                min-height: 121px;
+                object-fit: cover;
+            }
+        }
     }
     .slider {
-        display: none;
+        padding-top: 30px;
+        &__title {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 17px;
+        }
+        &__item {
+            padding: 22px 10px;
+            width: 223px;
+            height: 90px;
+        }
+    }
+    .pizza {
+        padding-top: 70px;
+        &__wrapper {
+            grid-template-columns: repeat(1, 100%);
+            grid-template-rows: repeat(6, minmax(312px, auto));
+            grid-auto-rows: minmax(312px, auto);
+            row-gap: 15px;
+        }
+        &-item {
+            padding: 20px 10px;
+            &__descr {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+        &__price {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+    .item {
+        &-title {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__title {
+            margin-bottom: 5px;
+        }
+    }
+    .button-card {
+        width: 148px;
+        height: 30px;
+        font-size: 11px;
+        line-height: 14px;
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .title {
+        font-size: 24px;
+        line-height: 28px;
+        &_mb75 {
+            margin-bottom: 30px;
+        }
+    }
+    .set {
+        padding-top: 70px;
+        &__wrapper {
+            grid-template-columns: repeat(1, 300px);
+            grid-auto-rows: minmax(302px, auto);
+            row-gap: 15px;
+        }
+    }
+    .burgers {
+        padding-top: 70px;
+        &__wrapper {
+            grid-template-columns: repeat(1, 300px);
+            grid-auto-rows: minmax(302px, auto);
+            row-gap: 15px;
+        }
+    }
+    .combo {
+        padding-top: 70px;
+        &__wrapper {
+            grid-template-columns: repeat(1, 300px);
+            grid-auto-rows: minmax(302px, auto);
+            row-gap: 15px;
+        }
+    }
+    .snacks {
+        padding-top: 70px;
+        &__wrapper {
+            grid-template-columns: repeat(1, 300px);
+            grid-auto-rows: minmax(271px, auto);
+            row-gap: 15px;
+        }
+    }
+    .drinks {
+        padding: 70px 0;
+        &__wrapper {
+            grid-template-columns: repeat(1, 300px);
+            grid-auto-rows: minmax(272px, auto);
+            row-gap: 15px;
+        }
     }
 }
