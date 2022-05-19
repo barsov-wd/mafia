@@ -13,9 +13,13 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__inner">
-                    <div class="header__logo">
+                    <!-- <div class="header__logo">
                         <img src="./img/header/header-logo.png" alt="header-logo">
-                    </div>
+                    </div> -->
+                    <picture class="header__logo">
+                        <source srcset="./img/header/header-logo-mobile.png" media="(max-width: 576px)">
+                        <img src="./img/header/header-logo.png" alt="header-logo">
+                    </picture>
                     <div class="header__selection">
                         <div class="header__sity-delivery">Город доставки</div>
                         <span class="header__city">Апрелевка</span>
@@ -26,6 +30,14 @@
                     </div>
                 </div>
                 <button class="header__button">Корзина<span class="header__button-price">0</span></button>
+                <div class="header__mobile-inner">
+                    <button class="header__button-mobile">
+                        <img src="./icons/header/header-button-mobile.svg" alt="header-button-mobile">
+                    </button>
+                    <a href="tel:+79779337797" class=" header__mobile-icon">
+                        <img src="./icons/header/header-mobile-icon.svg" alt="header-mobile-icon">
+                    </a>
+                </div>
                 <div class="humburger">
                     <span></span>
                     <span></span>
@@ -64,6 +76,22 @@
                     <a href="#">Напитки</a>
                 </li>
                 <div class="nav__divider"></div>
+                <div class="nav__city">
+                    <div class="nav__city-text">Апрелевка</div>
+                </div>
+                <div class="nav__divider"></div>
+                <div class="nav__contacts-title">Наши контакты</div>
+                <a href="tel:+79779337797" class="nav__contacts-phone">+7 (977) 933-77-97</a>
+                <div class="nav__contacts-work">С 10:00 до 23:00</div>
+                <div class="nav__image-absolute">
+                    <img src="./img/modal/menu-image-absolute.png" alt="menu-image-absolute">
+                </div>
+                <div class="nav__image-icon">
+                    <img src="./img/modal/menu-image-icon.png" alt="menu-image-icon">
+                </div>
+                <div class="nav__close-icon">
+                    <img src="./icons/modal/menu-close-icon.svg" alt="menu-close-icon">
+                </div>
             </ul>
         </div>
     </nav>

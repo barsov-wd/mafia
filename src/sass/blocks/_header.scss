@@ -4,11 +4,17 @@
     z-index: 1000;
     height: 120px;
     background-color: #fff;
+    // .humburger {
+    //     display: none;
+    // }
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 120px;
+        .humburger {
+            display: none;
+        }
     }
     &__inner {
         display: flex;
@@ -86,6 +92,15 @@
             right: -15px;
         }
     }
+    &__button-mobile {
+        display: none;
+    }
+    &__mobile-icon {
+        display: none;
+    }
+    &__mobile-inner {
+        display: none;
+    }
 }
 .nav {
     position: absolute;
@@ -120,5 +135,15 @@
                 width: 100%;
             }
         }
+    }
+    &__city-text,
+    &__contacts-title,
+    &__contacts-phone,
+    &__contacts-work,
+    &__divider,
+    &__image-absolute,
+    &__image-icon,
+    &__close-icon {
+        display: none;
     }
 }

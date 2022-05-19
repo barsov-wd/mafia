@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Counter
+
     const btnMinus = document.querySelector('[data-action="minus"]');
     const btnPlus = document.querySelector('[data-action="plus"]');
     const counter = document.querySelector('[data-counter]');
@@ -12,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     btnPlus.addEventListener('click', () => {
         counter.innerText = ++counter.innerText;
     });
+
+    // Modal
 
     const headerButton = document.querySelector('.header__button'),
         overlay = document.querySelector('.overlay'),
@@ -32,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-
+    // Slider
 
     new Swiper('.promo-slider', {
         navigation: {
@@ -47,6 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         speed: 500,
         breakpoints: {
+            577: {
+                slidesPerView: 1
+            },
             767: {
                 slidesPerView: 1
             },
@@ -71,6 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 20,
         loop: true,
         breakpoints: {
+            577: {
+                slidesPerView: 1.5
+            },
             767: {
                 slidesPerView: 2.3
             },
@@ -120,6 +130,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
+    });
+
+    // Menu
+    const humburger = document.querySelector('.humburger'),
+        nav = document.querySelector('.nav'),
+        navMenu = document.querySelector('.nav__menu'),
+        closeMenu = document.querySelector('.nav__close-icon');
+
+    humburger.addEventListener('click', () => {
+        nav.classList.add('active');
+        navMenu.classList.add('active');
+        document.body.overflow = 'hidden';
+
+    });
+
+    closeMenu.addEventListener('click', () => {
+        nav.classList.remove('active');
+        navMenu.classList.remove('active');
+        document.body.overflow = '';
     });
 });
 
