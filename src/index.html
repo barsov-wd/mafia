@@ -42,6 +42,12 @@
                 </div>
             </div>
         </div>
+        <button class="mobile-button">
+            <img src="./icons/button-card/mobile-button.png" alt="mobile-button">
+            <div class="mobile-button__count">
+                <span>3</span>
+            </div>
+        </button>
     </header>
     <!-- .header -->
 
@@ -102,27 +108,18 @@
             <div class="container promo-slider swiper">
                 <div class="promo-slider__wrapper swiper-wrapper">
                     <div class="promo-slider__slide swiper-slide">
-                        <!-- <div class="promo-slider__image">
-                            <img src="./img/promo/1.jpg" alt="1">
-                        </div> -->
                         <picture class="promo-slider__image">
                             <source srcset="./img/promo/11-mobile.png" media="(max-width: 576px)">
                             <img src="./img/promo/1.jpg" alt="1">
                         </picture>
                     </div>
                     <div class="promo-slider__slide swiper-slide">
-                        <!-- <div class="promo-slider__image">
-                            <img src="./img/promo/2.jpg" alt="2">
-                        </div> -->
                         <picture class="promo-slider__image">
                             <source srcset="./img/promo/2-mobile.jpg" media="(max-width: 576px)">
                             <img src="./img/promo/2.jpg" alt="2">
                         </picture>
                     </div>
                     <div class="promo-slider__slide swiper-slide">
-                        <!-- <div class="promo-slider__image">
-                            <img src="./img/promo/3.jpg" alt="3">
-                        </div> -->
                         <picture class="promo-slider__image">
                             <source srcset="./img/promo/3-mobile.jpg" media="(max-width: 576px)">
                             <img src="./img/promo/3.jpg" alt="3">
@@ -140,23 +137,32 @@
 
     <section class="slider">
         <div class="slider__image-absolute">
-            <img src="./img/slider/slider-image-absolute.png" alt="slider-image-absolute">
+            <picture>
+                <source srcset="./img/slider/slider-image-absolute-mobile.png" media="(max-width: 576px)">
+                <img src="./img/slider/slider-image-absolute.png" alt="slider-image-absolute">
+            </picture>
         </div>
         <div class="container sliders swiper">
             <h4 class="slider__title">Часто заказывают</h4>
             <div class="slider__items swiper-wrapper">
                 <div class="slider__item swiper-slide">
                     <div class="slider__item-wrapper">
-                        <img class="slider__image" src="./img/slider/slider-image-one.png" alt="slider-image-one">
+                        <picture class="slider__image">
+                            <source srcset="./img/slider/slider-mobile-one.png" media="(max-width: 576px)">
+                            <img src="./img/slider/slider-image-one.png" alt="slider-image-one">
+                        </picture>
                         <div class="slider__item-text">
                             Картошка фри <br>
-                            99 ₽
+                            <span>99 ₽</span>
                         </div>
                     </div>
                 </div>
                 <div class="slider__item swiper-slide">
                     <div class="slider__item-wrapper">
-                        <img class="slider__image" src="./img/slider/slider-image-two.png" alt="slider-image-two">
+                        <picture class="slider__image">
+                            <source srcset="./img/slider/slider-mobile-two.png" media="(max-width: 576px)">
+                            <img src="./img/slider/slider-image-two.png" alt="slider-image-two">
+                        </picture>
                         <div class="slider__item-text">
                             Пицца Мафиози <br>
                             от 480 ₽
@@ -165,7 +171,10 @@
                 </div>
                 <div class="slider__item swiper-slide">
                     <div class="slider__item-wrapper">
-                        <img class="slider__image" src="./img/slider/slider-image-three.png" alt="slider-image-three">
+                        <picture class="slider__image">
+                            <source srcset="./img/slider/slider-mobile-three.png" media="(max-width: 576px)">
+                            <img src="./img/slider/slider-image-three.png" alt="slider-image-three">
+                        </picture>
                         <div class="slider__item-text">
                             Пицца <br> 
                             Чёрная метка <br>
@@ -175,7 +184,10 @@
                 </div>
                 <div class="slider__item swiper-slide">
                     <div class="slider__item-wrapper">
-                        <img class="slider__image" src="./img/slider/slider-image-four.png" alt="slider-image-four">
+                        <picture class="slider__image">
+                            <source srcset="./img/slider/slider-mobile-four.png" media="(max-width: 576px)">
+                            <img src="./img/slider/slider-image-four.png" alt="slider-image-four">
+                        </picture>
                         <div class="slider__item-text">
                             Пицца Пепперони <br>
                             от 390 ₽
@@ -184,7 +196,10 @@
                 </div>
                 <div class="slider__item swiper-slide">
                     <div class="slider__item-wrapper">
-                        <img class="slider__image" src="./img/slider/slider-image-five.png" alt="slider-image-five">
+                        <picture class="slider__image">
+                            <source srcset="./img/slider/slider-mobile-five.png" media="(max-width: 576px)">
+                            <img src="./img/slider/slider-image-five.png" alt="slider-image-five">
+                        </picture>
                         <div class="slider__item-text">
                             Наггетсы <br>
                             160 ₽
@@ -193,7 +208,10 @@
                 </div>
                 <div class="slider__item swiper-slide">
                     <div class="slider__item-wrapper">
-                        <img class="slider__image" src="./img/slider/slider-image-six.png" alt="slider-image-six">
+                        <picture class="slider__image">
+                            <source srcset="./img/slider/slider-mobile-six.png" media="(max-width: 576px)">
+                            <img src="./img/slider/slider-image-six.png" alt="slider-image-six">
+                        </picture>
                         <div class="slider__item-text">
                             Cет Бонни и Клайд <br>
                             850 ₽
@@ -202,7 +220,10 @@
                 </div>
                 <div class="slider__item swiper-slide">
                     <div class="slider__item-wrapper">
-                        <img class="slider__image" src="./img/slider/slider-image-seven.png" alt="slider-image-seven">
+                        <picture class="slider__image">
+                            <source srcset="./img/slider/slider-mobile-seven.png" media="(max-width: 576px)">
+                            <img src="./img/slider/slider-image-seven.png" alt="slider-image-seven">
+                        </picture>
                         <div class="slider__item-text">
                             Cет Чикаго <br>
                             1100 ₽
@@ -211,7 +232,10 @@
                 </div>
                 <div class="slider__item swiper-slide">
                     <div class="slider__item-wrapper">
-                        <img class="slider__image" src="./img/slider/slider-image-eight.png" alt="slider-image-eight">
+                        <picture class="slider__image">
+                            <source srcset="./img/slider/slider-mobile-eight.png" media="(max-width: 576px)">
+                            <img src="./img/slider/slider-image-eight.png" alt="slider-image-one">
+                        </picture>
                         <div class="slider__item-text">
                             Пицца Мама мия <br>
                             От 530 ₽
@@ -220,7 +244,10 @@
                 </div>
                 <div class="slider__item swiper-slide">
                     <div class="slider__item-wrapper">
-                        <img class="slider__image" src="./img/slider/slider-image-one.png" alt="slider-image-one">
+                        <picture class="slider__image">
+                            <source srcset="./img/slider/slider-mobile-nine.png" media="(max-width: 576px)">
+                            <img src="./img/slider/slider-image-nine.png" alt="slider-image-one">
+                        </picture>
                         <div class="slider__item-text">
                             Пицца <br>
                             Деревенская <br>
@@ -230,7 +257,10 @@
                 </div>
                 <div class="slider__item swiper-slide">
                     <div class="slider__item-wrapper">
-                        <img class="slider__image" src="./img/slider/slider-image-one.png" alt="slider-image-one">
+                        <picture class="slider__image">
+                            <source srcset="./img/slider/slider-mobile-ten.png" media="(max-width: 576px)">
+                            <img src="./img/slider/slider-image-ten.png" alt="slider-image-one">
+                        </picture>
                         <div class="slider__item-text">
                             Картошка <br>
                             по-деревенски <br>
@@ -261,7 +291,10 @@
             <div class="pizza__wrapper">
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/mexican.png" alt="mexican">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/mexican-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/mexican.png" alt="mexican">
+                        </picture>
                         <h4 class="item-title item__title">Мексиканская</h4>
                         <p class="pizza-item__descr">
                             Соус томатный, соус кимчи, куриное филе, салями, перец болгарский, грибы шампиньоны, лук красный,
@@ -291,7 +324,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/carbonara.png" alt="carbonara">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/carbonara-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/carbonara.png" alt="carbonara">
+                        </picture>
                         <h4 class="item-title item__title">КАРБОНАРА</h4>
                         <p class="pizza-item__descr">
                             Соус тар-тар, соус моцарелла, сыр паулина, бекон, яйцо куриное
@@ -320,7 +356,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/juliet.png" alt="juliet">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/juliet-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/juliet.png" alt="mexican">
+                        </picture>
                         <h4 class="item-title item__title">ДЖУЛЬЕТА</h4>
                         <p class="pizza-item__descr">
                             Тесто для пиццы, соус тар-тар, сыр моцарелла, сыр паулина, куриное филе, грибы шампиньоны,
@@ -350,7 +389,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/village.png" alt="village">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/village-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/village.png" alt="village">
+                        </picture>
                         <h4 class="item-title item__title">ДЕРЕВЕНСКАЯ</h4>
                         <p class="pizza-item__descr">
                             Соус горчичный, сыр моцарелла, сыр паулина, салями, бекон, огурцы маринованные, картофельные
@@ -380,7 +422,10 @@
                 </div>
                 <div class="pizza-item pizza-item__four-cheeses">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/four-cheeses.png" alt="four-cheeses">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/four-cheeses-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/four-cheeses.png" alt="four-cheeses">
+                        </picture>
                         <h4 class="item-title item__title">ЧЕТЫРЕ СЫРА</h4>
                         <p class="pizza-item__descr">
                             Фирменный томатный соус, моцарелла, чеддер, сиртаки, гауда, орегано
@@ -412,7 +457,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/black-label.png" alt="black-label">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/black-label-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/black-label.png" alt="black-label">
+                        </picture>
                         <h4 class="item-title item__title">ЧЕРНАЯ МЕТКА</h4>
                         <p class="pizza-item__descr">
                             Соус сливочный, сыр моцарелла, пепперони, бекон, шампиньоны, помидоры
@@ -441,7 +489,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/tony-montana.png" alt="tony-montana">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/tony-montana-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/tony-montana.png" alt="tony-montana">
+                        </picture>
                         <h4 class="item-title item__title">ТОНИ МОНТАНА</h4>
                         <p class="pizza-item__descr">
                             Соус томатный, сыр моцарелла, колбаски охотничьи, говядина, шампиньоны, перец болгарский
@@ -470,7 +521,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/sicilian.png" alt="sicilian">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/sicilian-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/sicilian.png" alt="sicilian">
+                        </picture>
                         <h4 class="item-title item__title">СИЦИЛИЙСКАЯ</h4>
                         <p class="pizza-item__descr">
                             Сливочный соус, моцарелла, курица, ананас, чеснок, орегано, сырный соус
@@ -499,7 +553,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/russiano.png" alt="russiano">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/russiano-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/russiano.png" alt="russiano">
+                        </picture>
                         <h4 class="item-title item__title">РУССИАНО</h4>
                         <p class="pizza-item__descr">
                             Сливочный соус, моцарелла, чеснок, огурцы соленые, красный лук, зелень, орегано, колбаски
@@ -529,7 +586,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/pepperoni.png" alt="pepperoni">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/pepperoni-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/pepperoni.png" alt="pepperoni">
+                        </picture>
                         <h4 class="item-title item__title">ПЕППЕРОНИ</h4>
                         <p class="pizza-item__descr">
                             Фирменный томатный соус, моцарелла, пепперони, перец сладкий, орегано
@@ -558,7 +618,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/sea-tony.png" alt="sea-tony">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/sea-tony-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/sea-tony.png" alt="sea-tony">
+                        </picture>
                         <h4 class="item-title item__title">МОРСКОЙ ТОНИ</h4>
                         <p class="pizza-item__descr">
                             Фирменный томатный соус, моцарелла, креветка, лосось, сыр сиртаки, маслины, помидоры, орегано
@@ -590,7 +653,10 @@
                         <img src="./img/pizza/pizza-michigan-absolute.png" alt="pizza-michigan-absolute">
                     </div>
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/michigan.png" alt="michigan">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/michigan-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/michigan.png" alt="michigan">
+                        </picture>
                         <h4 class="item-title item__title">МИЧИГАН</h4>
                         <p class="pizza-item__descr">
                             Сливочный соус, моцарелла, чеснок, огурцы соленые, красный лук, зелень, орегано, колбаски
@@ -623,7 +689,10 @@
                         <img src="./img/pizza/pizza-mafia-absolute.png" alt="pizza-mafia-absolute">
                     </div>
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/mafia.png" alt="mafia">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/mafia-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/mafia.png" alt="mafia">
+                        </picture>
                         <h4 class="item-title item__title">МАФИОЗИ</h4>
                         <p class="pizza-item__descr">
                             Фирменный томатный соус, моцарелла, пепперони, ветчина, куриные колбаски, шампиньоны, лук
@@ -653,7 +722,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/margaret.png" alt="margaret">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/margaret-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/margaret.png" alt="margaret">
+                        </picture>
                         <h4 class="item-title item__title">МАРГАРИТА</h4>
                         <p class="pizza-item__descr">
                             Фирменный томатный соус, моцарелла, помидоры, сушеный базилик
@@ -682,7 +754,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/mia's-mom.png" alt="mia's-mom">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/mia's-mom-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/mia's-mom.png" alt="mia's-mom">
+                        </picture>
                         <h4 class="item-title item__title">МАМА MIA</h4>
                         <p class="pizza-item__descr">
                             Фирменный томатный соус, моцарелла, говядина, ветчина, курица, бекон, лук порей, орегано
@@ -711,7 +786,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/lucky-luciano.png" alt="lucky-luciano">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/lucky-luciano-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/lucky-luciano.png" alt="lucky-luciano">
+                        </picture>
                         <h4 class="item-title item__title">ЛАКИ ЛУЧИАНО</h4>
                         <p class="pizza-item__descr">
                             Фирменный томатный соус, моцарелла, помидоры, сушеный базилик
@@ -740,7 +818,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/consiglieri.png" alt="consiglieri">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/consiglieri-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/consiglieri.png" alt="consiglieri">
+                        </picture>
                         <h4 class="item-title item__title">КОНСИЛЬЕРИ</h4>
                         <p class="pizza-item__descr">
                             Соус сливочный, сыр моцарелла, ветчина, шампиньоны, бекон
@@ -769,7 +850,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/california.png" alt="california">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/california-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/california.png" alt="california">
+                        </picture>
                         <h4 class="item-title item__title">КАЛИФОРНИЯ</h4>
                         <p class="pizza-item__descr">
                             Соус томатный, сыр моцарелла тертый, говядина, куриное филе, помидоры, маслины, перец халапеньо
@@ -798,7 +882,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/dyabola.png" alt="dyabola">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/dyabola-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/dyabola.png" alt="dyabola">
+                        </picture>
                         <h4 class="item-title item__title">ДЬЯБОЛА</h4>
                         <p class="pizza-item__descr">
                         Фирменный томатный соус, ветчина, моцарелла, салями, огурец зеленый, помидоры, лук красный, перец
@@ -828,7 +915,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/don-pizza.png" alt="don-pizza">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/don-pizza-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/don-pizza.png" alt="don-pizza">
+                        </picture>
                         <h4 class="item-title item__title">ДОН ПИЦЦА</h4>
                         <p class="pizza-item__descr">
                             Фирменный томатный соус, мидии, моцарелла, креветка, кальмар, лосось, лимон, орегано
@@ -860,7 +950,10 @@
                         <img src="./img/pizza/corleone-image-absolute.png" alt="corleone-image-absolute">
                     </div>
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/don-corleone.png" alt="don-corleone">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/don-corleone-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/don-corleone.png" alt="don-corleone">
+                        </picture>
                         <h4 class="item-title item__title">ДОН КОРЛЕОНЕ</h4>
                         <p class="pizza-item__descr">
                             Фирменный томатный соус, ветчина, моцарелла, пепперони, маслины, говядина, перец зеленый,
@@ -890,7 +983,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/joni-bbq.png" alt="joni-bbq">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/joni-bbq-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/joni-bbq.png" alt="joni-bbq">
+                        </picture>
                         <h4 class="item-title item__title">ДЖОНИ BBQ</h4>
                         <p class="pizza-item__descr">
                             Фирменный томатный соус, бекон, моцарелла, курица, соус барбекю
@@ -919,7 +1015,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/grand-carne.png" alt="grand-carne">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/grand-carne-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/grand-carne.png" alt="grand-carne">
+                        </picture>
                         <h4 class="item-title item__title">ГРАНД КАРНЕ</h4>
                         <p class="pizza-item__descr">
                             Фирменный томатный соус, бекон, моцарелла, говядина, курица, салями, перец зеленый, лук красный,
@@ -949,7 +1048,10 @@
                 </div>
                 <div class="pizza-item">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/vegan-frankie.png" alt="vegan-frankie">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/vegan-frankie-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/vegan-frankie.png" alt="vegan-frankie">
+                        </picture>
                         <h4 class="item-title item__title">ВЕГАН ФРЕНКИ</h4>
                         <p class="pizza-item__descr">
                             Фирменный томатный соус, моцарелла, шампиньоны, помидоры, маслины, лук красный, перец зеленый,
@@ -977,9 +1079,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="pizza-item">
+                <div class="pizza-item pizza-item--last">
                     <div>
-                        <img class="pizza-item__image" src="./img/pizza/al-capone.png" alt="al-capone">
+                        <picture class="pizza-item__image">
+                            <source srcset="./img/pizza/al-capone-mobile.png" media="(max-width: 576px)">
+                            <img class="pizza-item__image" src="./img/pizza/al-capone.png" alt="al-capone">
+                        </picture>
                         <h4 class="item-title item__title">АЛЬ КАПОНЕ</h4>
                         <p class="pizza-item__descr">
                             Соус сливочный, сыр моцарелла, помидоры, ветчина, куриное филе, маслины, орегано
@@ -1020,7 +1125,10 @@
                         <img src="./img/set/set-one-absolute.png" alt="set-one-absolute">
                     </div>
                     <div>
-                        <img class="set-item__image" src="./img/set/set-1.png" alt="set-1">
+                        <picture class="set-item__image">
+                            <source srcset="./img/set/set-1-mobile.png" media="(max-width: 576px)">
+                            <img class="set-item__image" src="./img/set/set-1.png" alt="set-1">
+                        </picture>
                         <h4 class="item-title item__title">БОНИ И КЛАЙД</h4>
                         <p class="set-item__descr set-item__descr--first">
                             Джони BBQ, Лаки Лучано <br>
@@ -1044,7 +1152,10 @@
                 </div>
                 <div class="set-item">
                     <div>
-                        <img class="set-item__image" src="./img/set/set-2.png" alt="set-2">
+                        <picture class="set-item__image">
+                            <source srcset="./img/set/set-2-mobile.png" media="(max-width: 576px)">
+                            <img class="set-item__image" src="./img/set/set-2.png" alt="set-2">
+                        </picture>
                         <h4 class="item-title item__title">ЧИКАГО</h4>
                         <p class="set-item__descr">
                             Пепперони, Аль Капоне, <br>
@@ -1069,7 +1180,10 @@
                 </div>
                 <div class="set-item">
                     <div>
-                        <img class="set-item__image" src="./img/set/set-3.png" alt="set-3">
+                        <picture class="set-item__image">
+                            <source srcset="./img/set/set-3-mobile.png" media="(max-width: 576px)">
+                            <img class="set-item__image" src="./img/set/set-3.png" alt="set-3">
+                        </picture>
                         <h4 class="item-title item__title">ГРАНД</h4>
                         <p class="set-item__descr">
                             Маргарита, Морской Тони, Лаки <br> Лучано, Руссиано <br>
@@ -1093,7 +1207,10 @@
                 </div>
                 <div class="set-item">
                     <div>
-                        <img class="set-item__image" src="./img/set/set-4.png" alt="set-4">
+                        <picture class="set-item__image">
+                            <source srcset="./img/set/set-4-mobile.png" media="(max-width: 576px)">
+                            <img class="set-item__image" src="./img/set/set-4.png" alt="set-4">
+                        </picture>
                         <h4 class="item-title item__title">БОНИ И КЛАЙД</h4>
                         <p class="set-item__descr">
                             Гранд Карне, Джони BBQ, <br>
@@ -1123,11 +1240,14 @@
 
     <section class="burgers">
         <div class="container">
-            <h2 class="title title_mb75">Бургеры</h2>
+            <h2 class="title title_mb75 title__absolute-burgers">Бургеры</h2>
             <div class="burgers__wrapper">
                 <div class="burgers-item">
                     <div>
-                        <img class="burgers-item__image" src="./img/burgers/john-gotti.png" alt="john-gotti">
+                        <picture class="burgers-item__image">
+                            <source srcset="./img/burgers/john-gotti-mobile.png" media="(max-width: 576px)">
+                            <img src="./img/burgers/john-gotti.png" alt="john-gotti">
+                        </picture>
                         <h4 class="item-title item__title">ДЖОН ГОТТИ</h4>
                         <p class="burgers-item__descr">
                             Котлета свиная, яйцо жареное, лук карамелизированный, соус дабл-бургер, огурец маринованный,
@@ -1151,7 +1271,10 @@
                 </div>
                 <div class="burgers-item">
                     <div>
-                        <img class="burgers-item__image" src="./img/burgers/mushroom-louis.png" alt="mushroom-louis">
+                        <picture class="burgers-item__image">
+                            <source srcset="./img/burgers/mashroom-louis-mobile.png" media="(max-width: 576px)">
+                            <img src="./img/burgers/mushroom-louis.png" alt="mushroom-louis">
+                        </picture>
                         <h4 class="item-title item__title">ГРИБНОЙ ЛУИ</h4>
                         <p class="burgers-item__descr">
                             Котлета говяжья большая, двойной сыр чеддер, жареные шампиньоны, огурец маринованный, помидор,
@@ -1175,7 +1298,10 @@
                 </div>
                 <div class="burgers-item">
                     <div>
-                        <img class="burgers-item__image" src="./img/burgers/crazy-frank.png" alt="crazy-frank">
+                        <picture class="burgers-item__image">
+                            <source srcset="./img/burgers/crazy-frank-mobile.png" media="(max-width: 576px)">
+                            <img src="./img/burgers/crazy-frank.png" alt="crazy-frank">
+                        </picture>
                         <h4 class="item-title item__title">БЕЗУМНЫЙ ФРЭНК</h4>
                         <p class="burgers-item__descr">
                             Котлета говяжья большая, сыр чеддер, шампиньоны жареные, помидор, карамелизированный лук, салат
@@ -1199,7 +1325,10 @@
                 </div>
                 <div class="burgers-item">
                     <div>
-                        <img class="burgers-item__image" src="./img/burgers/blackjack.png" alt="blackjack">
+                        <picture class="burgers-item__image">
+                            <source srcset="./img/burgers/blackjack-mobile.png" media="(max-width: 576px)">
+                            <img src="./img/burgers/blackjack.png" alt="blackjack">
+                        </picture>
                         <h4 class="item-title item__title">БЛЭКДЖЕК</h4>
                         <p class="burgers-item__descr">
                             Котлета говяжья большая, сыр чеддер, помидор, огурец маринованный, салат айсберг, лук красный,
@@ -1226,7 +1355,10 @@
                         <img src="./img/burgers/burgers-image-left.png" alt="burgers-image-left">
                     </div>
                     <div>
-                        <img class="burgers-item__image" src="./img/burgers/royal-burger.png" alt="royal-burger">
+                        <picture class="burgers-item__image">
+                            <source srcset="./img/burgers/royal-burger-mobile.png" media="(max-width: 576px)">
+                            <img src="./img/burgers/royal-burger.png" alt="royal-burger">
+                        </picture>
                         <h4 class="item-title item__title">РОЯЛЛ БУРГЕР</h4>
                         <p class="burgers-item__descr">
                             Котлета куриная двойная, огурец маринованный, помидор, соус томатный, соус барбекю, сыр
@@ -1250,7 +1382,10 @@
                 </div>
                 <div class="burgers-item">
                     <div>
-                        <img class="burgers-item__image" src="./img/burgers/cheeseburger.png" alt="cheeseburger">
+                        <picture class="burgers-item__image">
+                            <source srcset="./img/burgers/cheeseburger-mobile.png" media="(max-width: 576px)">
+                            <img src="./img/burgers/cheeseburger.png" alt="cheeseburger">
+                        </picture>
                         <h4 class="item-title item__title">ЧИЗБУРГЕР</h4>
                         <p class="burgers-item__descr">
                             Соус дабл-бургер, соус гамбургер, помидор, лук красный, сыр чеддер, котлета говяжья
@@ -1273,7 +1408,10 @@
                 </div>
                 <div class="burgers-item">
                     <div>
-                        <img class="burgers-item__image" src="./img/burgers/cheese-mario.png" alt="cheese-mario">
+                        <picture class="burgers-item__image">
+                            <source srcset="./img/burgers/cheese-mario-mobile.png" media="(max-width: 576px)">
+                            <img src="./img/burgers/cheese-mario.png" alt="cheese-mario">
+                        </picture>
                         <h4 class="item-title item__title">CЫРНЫЙ МАРИО</h4>
                         <p class="burgers-item__descr">
                             Котлета говяжья, двойной сыр чеддер, соус гамбургер, соус томатный, лук красный
@@ -1299,7 +1437,10 @@
                         <img src="./img/burgers/burgers-image-right.png" alt="burgers-image-right">
                     </div>
                     <div>
-                        <img class="burgers-item__image" src="./img/burgers/big-ben.png" alt="big-ben">
+                        <picture class="burgers-item__image">
+                            <source srcset="./img/burgers/big-ben-mobile.png" media="(max-width: 576px)">
+                            <img src="./img/burgers/big-ben.png" alt="big-ben">
+                        </picture>
                         <h4 class="item-title item__title">БОЛЬШОЙ БЭН</h4>
                         <p class="burgers-item__descr">
                             Котлета говяжья большая, перец халапеньо, помидор свежий, соус гамбургер, салат айсберг, соус
@@ -1323,7 +1464,10 @@
                 </div>
                 <div class="burgers-item">
                     <div>
-                        <img class="burgers-item__image" src="./img/burgers/uncle-sam.png" alt="uncle-sam">
+                        <picture class="burgers-item__image">
+                            <source srcset="./img/burgers/uncle-sam-mobile.png" media="(max-width: 576px)">
+                            <img src="./img/burgers/uncle-sam.png" alt="uncle-sam">
+                        </picture>
                         <h4 class="item-title item__title">ДЯДЯ СЭМ</h4>
                         <p class="burgers-item__descr">
                             Котлета свиная, соус дабл-бургер, сыр эмменталь, помидор, лук красный, сыр чеддер
@@ -1346,7 +1490,10 @@
                 </div>
                 <div class="burgers-item">
                     <div>
-                        <img class="burgers-item__image" src="./img/burgers/spicy-burger.png" alt="spicy-burger">
+                        <picture class="burgers-item__image">
+                            <source srcset="./img/burgers/spicy-burger-mobile.png" media="(max-width: 576px)">
+                            <img src="./img/burgers/spicy-burger.png" alt="spicy-burger">
+                        </picture>
                         <h4 class="item-title item__title">СПАЙСИ БУРГЕР</h4>
                         <p class="burgers-item__descr">
                             Соус спайси, помидор, огурец маринованный, лук красный, сыр чеддер, салат айсберг, котлета
@@ -1370,7 +1517,10 @@
                 </div>
                 <div class="burgers-item">
                     <div>
-                        <img class="burgers-item__image" src="./img/burgers/well-fed-mike.png" alt="well-fed-mike">
+                        <picture class="burgers-item__image">
+                            <source srcset="./img/burgers/well-fed-mike-mobile.png" media="(max-width: 576px)">
+                            <img src="./img/burgers/well-fed-mike.png" alt="well-fed-mike">
+                        </picture>
                         <h4 class="item-title item__title">СЫТЫЙ МАЙК</h4>
                         <p class="burgers-item__descr">
                             Бекон, котлета куриная, помидор, лук красный, огурец маринованный, соус тар-тар, салат айсберг,
@@ -1394,7 +1544,10 @@
                 </div>
                 <div class="burgers-item">
                     <div>
-                        <img class="burgers-item__image" src="./img/burgers/mafburger.png" alt="mafburger">
+                        <picture class="burgers-item__image">
+                            <source srcset="./img/burgers/mafburger-mobile.png" media="(max-width: 576px)">
+                            <img src="./img/burgers/mafburger.png" alt="mafburger">
+                        </picture>
                         <h4 class="item-title item__title">МАФБУРГЕР</h4>
                         <p class="burgers-item__descr">
                             Бекон, помидор, огурец маринованный, салат айсберг, соус томатный, соус дабл бургер, котлета
@@ -1418,7 +1571,10 @@
                 </div>
                 <div class="burgers-item">
                     <div>
-                        <img class="burgers-item__image" src="./img/burgers/ronnie.png" alt="ronnie">
+                        <picture class="burgers-item__image">
+                            <source srcset="./img/burgers/ronnie-mobile.png" media="(max-width: 576px)">
+                            <img src="./img/burgers/ronnie.png" alt="ronnie">
+                        </picture>
                         <h4 class="item-title item__title">РОННИ</h4>
                         <p class="burgers-item__descr">
                             Котлета говяжья, соус горчичный, соус томатный, майонез, огурец маринованный, помидор, лук
@@ -1445,7 +1601,10 @@
                         <img src="./img/burgers/burgers-chicken-image.png" alt="burgers-chicken-image">
                     </div>
                     <div>
-                        <img class="burgers-item__image" src="./img/burgers/chickenburger.png" alt="chickenburger">
+                        <picture class="burgers-item__image">
+                            <source srcset="./img/burgers/cheekenburger-mobile.png" media="(max-width: 576px)">
+                            <img class="burgers-item__image" src="./img/burgers/chickenburger.png" alt="chickenburger">
+                        </picture>
                         <h4 class="item-title item__title">ЧИКЕНБУРГЕР</h4>
                         <p class="burgers-item__descr">
                             Томатный соус, майонез, котлета куриная, огурцы маринованные, лук красный, сыр эмменталь,
@@ -1477,14 +1636,17 @@
             <img src="./img/combo/combo-image-right.png" alt="combo-image-right">
         </div>
         <div class="container">
-            <h2 class="title title_mb75">Комбо</h2>
+            <h2 class="title title_mb75 title__absolute-combo">Комбо</h2>
             <div class="combo__wrapper">
                 <div class="combo-item combo-item__one">
                     <div class="combo-item__one-image">
                         <img src="./img/combo/combo-image-left.png" alt="combo-image-left">
                     </div>
                     <div>
-                        <img class="combo-item__image" src="./img/combo/combo-1.png" alt="combo-1">
+                        <picture class="combo-item__image">
+                            <source srcset="./img/combo/combo-1-mobile.png" media="(max-width: 576px)">
+                            <img class="combo-item__image" src="./img/combo/combo-1.png" alt="combo-1">
+                        </picture>
                         <h4 class="item-title item__title">КОМБО #1</h4>
                         <p class="combo-item__descr">
                             Чизбургер, сытый майк <br>
@@ -1509,7 +1671,10 @@
                 </div>
                 <div class="combo-item">
                     <div>
-                        <img class="combo-item__image" src="./img/combo/combo-2.png" alt="combo-2">
+                        <picture class="combo-item__image">
+                            <source srcset="./img/combo/combo-2-mobile.png" media="(max-width: 576px)">
+                            <img class="combo-item__image" src="./img/combo/combo-2.png" alt="combo-2">
+                        </picture>
                         <h4 class="item-title item__title">КОМБО #2</h4>
                         <p class="combo-item__descr">
                             Дядя сэм, большой Бэн, <br>
@@ -1534,7 +1699,10 @@
                 </div>
                 <div class="combo-item">
                     <div>
-                        <img class="combo-item__image" src="./img/combo/combo-3.png" alt="combo-3">
+                        <picture class="combo-item__image">
+                            <source srcset="./img/combo/combo-3-mobile.png" media="(max-width: 576px)">
+                            <img class="combo-item__image" src="./img/combo/combo-3.png" alt="combo-3">
+                        </picture>
                         <h4 class="item-title item__title">КОМБО #3</h4>
                         <p class="combo-item__descr">
                             Блэк джек, мафбургер, <br>
@@ -1573,11 +1741,14 @@
             <img src="./img/snacks/snacks-image-bottom.png" alt="snacks-image-bottom">
         </div>
         <div class="container">
-            <h2 class="title title_mb75">ЗАКУСКИ</h2>
+            <h2 class="title title_mb75 title__absolute-snacks">ЗАКУСКИ</h2>
             <div class="snacks__wrapper">
                 <div class="snacks-item">
                     <div>
-                        <img class="snacks-item__image" src="./img/snacks/squid.png" alt="squid">
+                        <picture class="snacks-item__image">
+                            <source srcset="./img/snacks/squid-mobile.png" media="(max-width: 576px)">
+                            <img class="snacks-item__image" src="./img/snacks/squid.png" alt="squid">
+                        </picture>
                         <h4 class="item-title item__title">КАЛЬМАР ТЕМПУРА</h4>
                         <p class="snacks-item__descr">
                             Кальмары, панировка
@@ -1600,7 +1771,10 @@
                 </div>
                 <div class="snacks-item">
                     <div>
-                        <img class="snacks-item__image" src="./img/snacks/rustic-potatoes.png" alt="rustic-potatoes">
+                        <picture class="snacks-item__image">
+                            <source srcset="./img/snacks/rustic-potatoes-mobile.png" media="(max-width: 576px)">
+                            <img class="snacks-item__image" src="./img/snacks/rustic-potatoes.png" alt="rustic-potatoes">
+                        </picture>
                         <h4 class="item-title item__title">КАРТОФЕЛЬ ПО-ДЕРЕВЕНСКИ</h4>
                         <p class="snacks-item__descr">
                             Картофель
@@ -1623,7 +1797,10 @@
                 </div>
                 <div class="snacks-item">
                     <div>
-                        <img class="snacks-item__image" src="./img/snacks/shrimp.png" alt="shrimp">
+                        <picture class="snacks-item__image">
+                            <source srcset="./img/snacks/shrimp-mobile.png" media="(max-width: 576px)">
+                            <img src="./img/snacks/shrimp.png" alt="shrimp">
+                        </picture>
                         <h4 class="item-title item__title">КРЕВЕТКИ ТЕМПУРА</h4>
                         <p class="snacks-item__descr">
                             Креветки, панировка
@@ -1646,7 +1823,10 @@
                 </div>
                 <div class="snacks-item">
                     <div>
-                        <img class="snacks-item__image" src="./img/snacks/french-fries.png" alt="french-fries">
+                        <picture class="snacks-item__image">
+                            <source srcset="./img/snacks/french-fries-mobile.png" media="(max-width: 576px)">
+                            <img class="snacks-item__image" src="./img/snacks/french-fries.png" alt="french-fries">
+                        </picture>
                         <h4 class="item-title item__title">КАРТОФЕЛЬ ФРИ</h4>
                         <p class="snacks-item__descr">
                             Картофель
@@ -1669,7 +1849,10 @@
                 </div>
                 <div class="snacks-item">
                     <div>
-                        <img class="snacks-item__image" src="./img/snacks/nuggets.png" alt="nuggets">
+                        <picture class="snacks-item__image">
+                            <source srcset="./img/snacks/nuggets-mobile.png" media="(max-width: 576px)">
+                            <img class="snacks-item__image" src="./img/snacks/nuggets.png" alt="nuggets">
+                        </picture>
                         <h4 class="item-title item__title">КУРИНЫЕ НАГГЕТСЫ</h4>
                         <p class="snacks-item__descr">
                             Курица, панировка
@@ -1700,13 +1883,16 @@
             <img src="./img/drinks/drinks-image-absolute.png" alt="drinks-image-absolute">
         </div>
         <div class="container">
-            <h2 class="title title_mb75">НАПИТКИ</h2>
+            <h2 class="title title_mb75 title__absolute-drinks">НАПИТКИ</h2>
             <div class="drinks__wrapper">
                 <div class="drinks-item drinks-item__one">
                     <div class="drinks-item__image-one">
                         <img src="./img/drinks/drinks-image-left.png" alt="drinks-image-left">
                     </div>
-                    <img class="drinks-item__image" src="./img/drinks/pepsi-cola-500.png" alt="pepsi-cola-500">
+                    <picture class="drinks-item__image">
+                        <source srcset="./img/drinks/pepsi-cola-500-mobile.png" media="(max-width: 576px)">
+                        <img class="drinks-item__image" src="./img/drinks/pepsi-cola-500.png" alt="pepsi-cola-500">
+                    </picture>
                     <h4 class="item-title item__title">Pepsi - Cola</h4>
                     <div class="drinks__volume">
                         <div class="drinks__volume-text">0,5 л</div>
@@ -1727,7 +1913,10 @@
                     </div>
                 </div>
                 <div class="drinks-item">
-                    <img class="drinks-item__image" src="./img/drinks/pepsi-cola-1000.png" alt="pepsi-cola-1000">
+                    <picture class="drinks-item__image">
+                        <source srcset="./img/drinks/pepsi-cola-1000-mobile.png" media="(max-width: 576px)">
+                        <img class="drinks-item__image" src="./img/drinks/pepsi-cola-1000.png" alt="pepsi-cola-1000">
+                    </picture>
                     <h4 class="item-title item__title">Pepsi - Cola</h4>
                     <div class="drinks__volume">
                         <div class="drinks__volume-text">1 л</div>
@@ -1749,7 +1938,10 @@
                 </div>
                 <div class="drinks-item">
                     <div>
-                        <img class="drinks-item__image" src="./img/drinks/aqua-minerale.png" alt="aqua-minerale">
+                        <picture class="drinks-item__image">
+                            <source srcset="./img/drinks/aqua-minerale-mobile.png" media="(max-width: 576px)">
+                            <img class="drinks-item__image" src="./img/drinks/aqua-minerale.png" alt="aqua-minerale">
+                        </picture>
                         <h4 class="item-title item__title">Aqua Minerale</h4>
                         <p class="drinks-item__descr">
                             В ассортименте
@@ -1774,7 +1966,10 @@
                     </div>
                 </div>
                 <div class="drinks-item">
-                    <img class="drinks-item__image" src="./img/drinks/mirinda.png" alt="mirinda">
+                    <picture class="drinks-item__image">
+                        <source srcset="./img/drinks/mirinda-mobile.png" media="(max-width: 576px)">
+                        <img class="drinks-item__image" src="./img/drinks/mirinda.png" alt="mirinda">
+                    </picture>
                     <h4 class="item-title item__title">Mirinda</h4>
                     <div class="drinks__volume">
                         <div class="drinks__volume-text">0,5 л</div>
@@ -1795,7 +1990,10 @@
                     </div>
                 </div>
                 <div class="drinks-item">
-                    <img class="drinks-item__image" src="./img/drinks/7up.png" alt="7up">
+                    <picture class="drinks-item__image">
+                        <source srcset="./img/drinks/7up-mobile.png" media="(max-width: 576px)">
+                        <img class="drinks-item__image" src="./img/drinks/7up.png" alt="7up">
+                    </picture>
                     <h4 class="item-title item__title">7up</h4>
                     <div class="drinks__volume">
                         <div class="drinks__volume-text">0,5 л</div>
@@ -1816,7 +2014,10 @@
                     </div>
                 </div>
                 <div class="drinks-item">
-                    <img class="drinks-item__image" src="./img/drinks/adrenaline-rush-250.png" alt="adrenaline-rush-250">
+                    <picture class="drinks-item__image">
+                        <source srcset="./img/drinks/adrenaline-rush-250-mobile.png" media="(max-width: 576px)">
+                        <img class="drinks-item__image" src="./img/drinks/adrenaline-rush-250.png" alt="adrenaline-rush-250">
+                    </picture>
                     <h4 class="item-title item__title">Adrenaline Rush</h4>
                     <div class="drinks__volume">
                         <div class="drinks__volume-text">0,25 л</div>
@@ -1837,7 +2038,10 @@
                     </div>
                 </div>
                 <div class="drinks-item">
-                    <img class="drinks-item__image" src="./img/drinks/adrenalin-rush-449.png" alt="adrenalin-rush-449">
+                    <picture class="drinks-item__image">
+                        <source srcset="./img/drinks/adrenaline-rush-449-mobile.png" media="(max-width: 576px)">
+                        <img class="drinks-item__image" src="./img/drinks/adrenalin-rush-449.png" alt="adrenalin-rush-449">
+                    </picture>
                     <h4 class="item-title item__title">Adrenaline Rush</h4>
                     <div class="drinks__volume">
                         <div class="drinks__volume-text">0,449 л</div>
@@ -1859,7 +2063,10 @@
                 </div>
                 <div class="drinks-item">
                     <div>
-                        <img class="drinks-item__image" src="./img/drinks/lipton.png" alt="lipton">
+                        <picture class="drinks-item__image">
+                            <source srcset="./img/drinks/lipton-mobile.png" media="(max-width: 576px)">
+                            <img class="drinks-item__image" src="./img/drinks/lipton.png" alt="lipton">
+                        </picture>
                         <h4 class="item-title item__title">Чай Lipton</h4>
                         <p class="drinks-item__descr">
                             В ассортименте
@@ -1884,7 +2091,10 @@
                     </div>
                 </div>
                 <div class="drinks-item">
-                    <img class="drinks-item__image" src="./img/drinks/cranberry-juice.png" alt="cranberry-juice">
+                    <picture class="drinks-item__image">
+                        <source srcset="./img/drinks/cranberry-juice-mobile.png" media="(max-width: 576px)">
+                        <img class="drinks-item__image" src="./img/drinks/cranberry-juice.png" alt="cranberry-juice">
+                    </picture>
                     <h4 class="item-title item__title">Морс клюквенный</h4>
                     <div class="drinks__volume">
                         <div class="drinks__volume-text">0,5 л</div>
@@ -1908,7 +2118,10 @@
                     <div class="drinks-item__strawberry-image">
                         <img src="./img/drinks/drinks-strawberry-right.png" alt="drinks-strawberry-right">
                     </div>
-                    <img class="drinks-item__image" src="./img/drinks/strawberry-juice.png" alt="strawberry-juice">
+                    <picture class="drinks-item__image">
+                        <source srcset="./img/drinks/strawberry-juice-mobile.png" media="(max-width: 576px)">
+                        <img class="drinks-item__image" src="./img/drinks/strawberry-juice.png" alt="strawberry-juice">
+                    </picture>
                     <h4 class="item-title item__title">Морс клубничный</h4>
                     <div class="drinks__volume">
                         <div class="drinks__volume-text">0,5 л</div>

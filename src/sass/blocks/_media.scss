@@ -538,7 +538,7 @@
         z-index: 100;
         &.active {
             left: 0;
-            z-index: 100;
+            z-index: 1002;
         }
         &__menu {
             position: fixed;
@@ -555,7 +555,7 @@
             transition: 0.8s all;
             &.active {
                 left: 0;
-                z-index: 100;
+                z-index: 1002;
             }
         }
         &__menu-item {
@@ -834,7 +834,6 @@
         }
         &-item {
             &__royal-image {
-                // left: -430px;
                 display: none;
             }
             &__chicken-image {
@@ -871,7 +870,6 @@
             column-gap: 0;
         }
         &__image-middle {
-            // left: 63%;
             display: none;
         }
         &__image-right {
@@ -905,7 +903,36 @@
         padding: 0 10px;
     }
     .header {
+        position: relative;
+        z-index: 1000;
         height: 69px;
+        .mobile-button {
+            display: block;
+            position: fixed;
+            top: 437px;
+            right: 10px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            &__count {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 4px;
+                right: 4px;
+                width: 21px;
+                height: 21px;
+                background-color: #fff;
+                border-radius: 100%;
+                z-index: 1001;
+                span {
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 17px;
+                }
+            }
+        }
         &__wrapper {
             height: 69px;
             align-items: center;
@@ -1005,6 +1032,21 @@
             width: 223px;
             height: 90px;
         }
+        &__item-text {
+            font-size: 12px;
+            line-height: 16px;
+            span {
+                font-weight: 700;
+            }
+        }
+        &__image-absolute {
+            bottom: -80px;
+            left: 12px;
+            img {
+                width: 50px;
+                height: 51px;
+            }
+        }
     }
     .pizza {
         padding-top: 70px;
@@ -1021,9 +1063,24 @@
                 line-height: 14px;
             }
         }
+        &-item--last {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 83px;
+                height: 70px;
+                right: 0;
+                bottom: -95px;
+                background: url('../img/pizza/pizza-item-last.png') center no-repeat;
+            }
+        }
         &__price {
             font-size: 20px;
             line-height: 24px;
+        }
+        &__absolute-bottom {
+            display: none;
         }
     }
     .item {
@@ -1035,6 +1092,23 @@
             margin-bottom: 5px;
         }
     }
+    .checkbox-green {
+        width: 148px;
+        height: 30px;
+    }
+    .checkbox-green .checkbox-green-switch:after {
+        width: 72px;
+        font-size: 11px;
+        line-height: 26px;
+    } 
+    .checkbox-green .checkbox-green-switch:before {
+        top: 0;
+        right: 35px;
+        font-size: 11px;
+    }
+    .checkbox-green input[type=checkbox]:checked+.checkbox-green-switch:after {
+        transform: translate3d(71px, 0, 0);
+    }
     .button-card {
         width: 148px;
         height: 30px;
@@ -1043,6 +1117,7 @@
         img {
             width: 15px;
             height: 15px;
+            margin-left: 3px;
         }
     }
     .title {
@@ -1052,44 +1127,240 @@
             margin-bottom: 30px;
         }
     }
+    .title__absolute-burgers {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 53px;
+            height: 47px;
+            top: -55px;
+            left: 35px;
+            background: url('../img/set/set-item-last.png') center no-repeat;
+        }
+    }
+    .title__absolute-combo {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 57px;
+            height: 48px;
+            top: -45px;
+            right: 23px;
+            background: url('../img/combo/combo-title-absolute.png') center no-repeat;
+        }
+    }
+    .title__absolute-snacks {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 52px;
+            height: 52px;
+            top: -40px;
+            left: 33px;
+            background: url('../img/snacks/snacks-absolute-title.png') center no-repeat;
+        }
+    }
+    .title__absolute-drinks {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 73px;
+            height: 70px;
+            right: 0;
+            top: -40px;
+            background: url('../img/drinks/drinks-absolute-title.png') center no-repeat;
+        }
+    }
+    .counter__wrapper {
+        width: 70px;
+        height: 30px;
+    }
     .set {
         padding-top: 70px;
         &__wrapper {
-            grid-template-columns: repeat(1, 300px);
+            grid-template-columns: repeat(1, 100%);
             grid-auto-rows: minmax(302px, auto);
             row-gap: 15px;
+        }
+        &-item {
+            padding: 20px 0;
+            &__descr {
+                font-size: 11px;
+                line-height: 14px;
+            }
+            &__descr--first {
+                margin-bottom: 15px;
+            }
+            &__image {
+                margin-bottom: 10px;
+            }
+            &__last-image {
+                position: absolute;
+                bottom: -30px;
+                left: 25px;
+            }
+        }
+        &__price {
+            font-size: 20px;
+            line-height: 24px;
+            margin-left: 15px;
         }
     }
     .burgers {
         padding-top: 70px;
         &__wrapper {
-            grid-template-columns: repeat(1, 300px);
+            grid-template-columns: repeat(1, 100%);
+            grid-template-rows: repeat(4, minmax(302px, auto));
             grid-auto-rows: minmax(302px, auto);
             row-gap: 15px;
+        }
+        &-item {
+            &__descr {
+                font-size: 11px;
+                line-height: 14px;
+                margin-bottom: 18px;
+                br {
+                    display: none;
+                }
+            }
+            &__image {
+                margin-bottom: 10px;
+            }
+        }
+        &__inner {
+            margin-bottom: 10px;
+        }
+        &__price {
+            font-size: 20px;
+            line-height: 24px;
+            margin-left: 15px;
         }
     }
     .combo {
         padding-top: 70px;
         &__wrapper {
-            grid-template-columns: repeat(1, 300px);
-            grid-auto-rows: minmax(302px, auto);
+            grid-template-columns: repeat(1, 100%);
+            grid-template-rows: repeat(2, 311px);
+            grid-auto-rows: minmax(311px, auto);
             row-gap: 15px;
+        }
+        &-item {
+            padding: 20px 13px;
+            &__image {
+                margin-bottom: 10px;
+            }
+            &__descr {
+                font-size: 11px;
+                line-height: 14px;
+                margin-bottom: 15px;
+                br {
+                    display: none;
+                }
+            }
+        }
+        &__inner {
+            margin-bottom: 10px;
+        }
+        &__price {
+            font-size: 20px;
+            line-height: 24px;
+            margin-left: 15px;
         }
     }
     .snacks {
         padding-top: 70px;
         &__wrapper {
-            grid-template-columns: repeat(1, 300px);
+            grid-template-columns: repeat(1, 100%);
+            grid-template-rows: repeat(2, minmax(271px, auto));
             grid-auto-rows: minmax(271px, auto);
             row-gap: 15px;
+        }
+        &-item {
+            padding: 20px 0;
+            &__image {
+                margin-bottom: 10px;
+            }
+            &__descr {
+                font-size: 11px;
+                line-height: 14px;
+                margin-bottom: 15px;
+            }
+        }
+        &__price {
+            font-size: 20px;
+            line-height: 24px;
+            margin-left: 15px;
+        }
+        &__inner {
+            margin-bottom: 10px;
+        }
+        &__image-right {
+            display: none;
         }
     }
     .drinks {
         padding: 70px 0;
         &__wrapper {
-            grid-template-columns: repeat(1, 300px);
+            grid-template-columns: repeat(1, 100%);
+            grid-template-rows: repeat(3, minmax(272px, auto));
             grid-auto-rows: minmax(272px, auto);
             row-gap: 15px;
+        }
+        &-item {
+            padding: 20px 0;
+            &__image {
+                margin-bottom: 10px;
+            }
+            &__descr {
+                font-size: 11px;
+                line-height: 14px;
+            }
+        }
+        &__volume {
+            border: none;
+        }
+        &__volume-text {
+            color: $main-color;
+            font-size: 11px;
+            line-height: 14px;
+        }
+        &__price {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &__inner {
+            margin-bottom: 10px;
+        }
+    }
+    .footer {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 56px;
+            height: 49px;
+            left: 37px;
+            top: -70px;
+            background: url('../img/drinks/footer-image-before.png') center no-repeat;
+            z-index: 10;
+        }
+        &__info-copy {
+            font-size: 11px;
+            line-height: 14px;
+            margin-bottom: 5px;
+        }
+        &__info-phone {
+            font-size: 18px;
+            line-height: 22px;
+            padding-left: 22px;
+            &::before {
+                width: 16px;
+                height: 16px;
+            }
         }
     }
 }
