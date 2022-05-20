@@ -2,6 +2,11 @@
     .container {
         width: 1380px;
     }
+    .slider {
+        &__inner {
+            width: 1380px;
+        }
+    }
     .pizza {
         position: relative;
         z-index: 3;
@@ -61,6 +66,14 @@
 @media (max-width: 1600px) {
     .container {
         width: 1340px;
+    }
+    .slider {
+        &__inner {
+            width: 1340px;
+            .swiper-navigation {
+                right: -45px;
+            }
+        }
     }
     .promo {
         .container {
@@ -163,6 +176,11 @@
     .container {
         max-width: 1280px;
     }
+    .slider {
+        &__inner {
+            width: 1280px;
+        }
+    }
     .header {
         &__selection,
         &__phone {
@@ -192,6 +210,11 @@
 @media (max-width: 1370px) {
     .container {
         width: 1170px;
+    }
+    .slider {
+        &__inner {
+            width: 1170px;
+        }
     }
     .header {
         &__selection,
@@ -281,6 +304,15 @@
     .container {
         width: 1140px;
     }
+    .slider {
+        &__inner {
+            width: 1140px;
+        }
+        .swiper-navigation {
+            right: -20px;
+            z-index: 100;
+        }
+    }
     .header {
         &__selection,
         &__phone {
@@ -336,6 +368,14 @@
     .container {
         width: 960px;
     }
+    .slider {
+        &__inner {
+            width: 960px;
+        }
+        .swiper-navigation {
+            right: -15px;
+        }
+    }
     .header {
         &__selection,
         &__phone {
@@ -357,6 +397,7 @@
         }
         &-slider__image {
             width: 700px;
+            display: block;
             margin: 0 auto;
         }
         &__arrow-prev {
@@ -368,11 +409,12 @@
             right: 70px;
         }
     }
-    .slider {
-        &__arrow-next {
-            display: none;
-        }
-    }
+    // .slider {
+    //     &__arrow-next {
+    //         top: 100px;
+    //         right: 17px;
+    //     }
+    // }
     .pizza {
         padding-top: 100px;
         &__wrapper {
@@ -447,7 +489,35 @@
     .header {
         position: relative;
         background-color: #e5e5e5;
-        z-index: 2;
+        z-index: 1000;
+        .mobile-button {
+            display: block;
+            position: fixed;
+            top: 437px;
+            right: 10px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 1000;
+            &__count {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 4px;
+                right: 4px;
+                width: 21px;
+                height: 21px;
+                background-color: #fff;
+                border-radius: 100%;
+                z-index: 1001;
+                span {
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 17px;
+                }
+            }
+        }
         &__wrapper {
             .humburger {
                 position: relative;
@@ -457,7 +527,6 @@
                 width: 33px;
                 height: 27px;
                 cursor: pointer;
-
                 span {
                     display: block;
                     height: 3px;
@@ -466,23 +535,18 @@
                     margin-bottom: 8px;
                     transition: 0.5s all;
                 }
-
                 &_active {
                     position: fixed;
                     z-index: 100;
                     right: 80px;
-
                     span {
                         margin-bottom: -2px;
-
                         &:nth-child(1) {
                             transform: translateY(3px) rotate(-45deg);
                         }
-
                         &:nth-child(2) {
                             display: none;
                         }
-
                         &:nth-child(3) {
                             transform: translateY(3px) rotate(45deg);
                         }
@@ -535,7 +599,7 @@
         background: rgba($main-color, .2);
         // background: #ffffff;
         transition: 0.1s all;
-        z-index: 100;
+        z-index: 1002;
         &.active {
             left: 0;
             z-index: 1002;
@@ -687,6 +751,12 @@
                 width: 150px;
             }
         }
+        &__inner {
+            width: 750px;
+            .swiper-navigation {
+                right: -5px;
+            }
+        }
     }
     .pizza {
         padding-top: 95px;
@@ -775,13 +845,19 @@
     }
     .slider {
         padding-top: 50px;
-        &__arrow-next {
-            display: none;
-        }
+        // &__arrow-next {
+        //     // display: none;
+        // }
         &__image-absolute {
             bottom: -120px;
             img {
                 width: 100px;
+            }
+        }
+        &__inner {
+            width: 540px;
+            .swiper-navigation {
+                right: -15px;
             }
         }
     }
@@ -906,33 +982,6 @@
         position: relative;
         z-index: 1000;
         height: 69px;
-        .mobile-button {
-            display: block;
-            position: fixed;
-            top: 437px;
-            right: 10px;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            &__count {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                top: 4px;
-                right: 4px;
-                width: 21px;
-                height: 21px;
-                background-color: #fff;
-                border-radius: 100%;
-                z-index: 1001;
-                span {
-                    font-weight: 700;
-                    font-size: 13px;
-                    line-height: 17px;
-                }
-            }
-        }
         &__wrapper {
             height: 69px;
             align-items: center;
@@ -1012,12 +1061,11 @@
         }
         &-slider__image {
             margin-left: 0;
-            img {
-                width: 100%;
-                min-width: 223px;
-                min-height: 121px;
-                object-fit: cover;
-            }
+            display: inline-block;
+            width: 100%;
+            min-width: 223px;
+            min-height: 121px;
+            object-fit: cover;
         }
     }
     .slider {
@@ -1045,6 +1093,14 @@
             img {
                 width: 50px;
                 height: 51px;
+            }
+        }
+        &__inner {
+            width: 100%;
+            padding: 10px 0;
+            .swiper-navigation {
+                top: 50%;
+                right: 0;
             }
         }
     }

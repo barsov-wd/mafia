@@ -36,30 +36,40 @@
     }
     // &__arrow-next {
     //     position: absolute;
-    //     top: 50%;
+    //     top: 75%;
     //     transform: translateY(-50%);
-    //     right: 20px;
+    //     right: 190px;
     //     cursor: pointer;
     //     z-index: 1000;
     // }
+    &__inner {
+        position: relative;
+        width: 1440px;
+        margin: 0 auto;
+        .swiper-navigation {
+            position: absolute;
+            top: 58%;
+            right: -35px;
+        }
+    }
 }
 
-.sliders {
-    position: relative;
-    .swiper-navigation {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: -20px;
-        cursor: pointer;
-        z-index: 1000;
-    }
-    // &.slider__arrow-next {
-    //     position: absolute;
-    //     top: 50%;
-    //     transform: translateY(-50%);
-    //     top: 0;
-    //     right: 0;
-    //     cursor: pointer;
-    // }
-}
+// .sliders {
+//     position: relative;
+//     .swiper-navigation {
+//         position: absolute;
+//         top: 50%;
+//         transform: translateY(-50%);
+//         right: -20px;
+//         cursor: pointer;
+//         z-index: 1000;
+//     }
+//     // &.slider__arrow-next {
+//     //     position: absolute;
+//     //     top: 50%;
+//     //     transform: translateY(-50%);
+//     //     top: 0;
+//     //     right: 0;
+//     //     cursor: pointer;
+//     // }
+// }
