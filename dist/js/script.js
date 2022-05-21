@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Counter
 
-    const btnMinus = [...document.querySelectorAll('[data-action="minus"]')];
-    const btnPlus = document.querySelectorAll('[data-action="plus"]');
-    const counter = document.querySelectorAll('[data-counter]');
+    const btnMinus = document.querySelectorAll('[data-action="minus"]'),
+          btnPlus = document.querySelectorAll('[data-action="plus"]');
+          counter = document.querySelectorAll('[data-counter]');
 
-    btnMinus.forEach(item => {
+    btnMinus.forEach((item, i) => {
         item.addEventListener('click', () => {
             if (parseInt(counter[i].innerText) > 1) {
                 counter[i].innerText = --counter[i].innerText;
@@ -18,6 +18,30 @@ document.addEventListener('DOMContentLoaded', () => {
             counter[i].innerText = ++counter[i].innerText;
         });
     });
+
+    // Modal sity 
+
+    const modalTrigger = document.querySelectorAll('[data-city]'),
+          modalCity = document.querySelector('.modal-sity'),
+          closeSity = document.querySelector('[data-close]');
+
+    modalTrigger.forEach(btn => {
+        btn.addEventListener('click', openModal);
+    });
+
+    closeSity.addEventListener('click', closeModal);
+
+    function openModal() {
+        modalCity.classList.add('show');
+        modalCity.classList.remove('hide');
+    }
+
+
+    function closeModal() {
+        modalCity.classList.add('hide');
+        modalCity.classList.remove('show');
+    }
+
 
     // Modal
 
@@ -90,6 +114,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 slidesPerView: 1.3,
                 spaceBetween: 10
             },
+            350: {
+                slidesPerView: 1.5
+            },
             577: {
                 slidesPerView: 1.5
             },
@@ -146,9 +173,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Menu
     const humburger = document.querySelector('.humburger'),
-        nav = document.querySelector('.nav'),
-        navMenu = document.querySelector('.nav__menu'),
-        closeMenu = document.querySelector('.nav__close-icon');
+          nav = document.querySelector('.nav'),
+          navMenu = document.querySelector('.nav__menu'),
+          closeMenu = document.querySelector('.nav__close-icon');
 
     humburger.addEventListener('click', () => {
         nav.classList.add('active');
