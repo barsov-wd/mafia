@@ -10,6 +10,7 @@
     font-weight: 400;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -20,6 +21,7 @@
 }
 
 a {
+    scroll-behavior: smooth;
     text-decoration: none;
     color: inherit;
 }

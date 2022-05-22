@@ -48,19 +48,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerButton = document.querySelector('.header__button'),
         overlay = document.querySelector('.overlay'),
         modalEmpty = document.querySelector('.modal-registration'),
-        closeElem = document.querySelector('.modal-empty__close');
+        closeElem = document.querySelector('.modal-registration__close');
 
     headerButton.addEventListener('click', () => {
         overlay.classList.add('active');
         modalEmpty.classList.add('active');
-        document.body.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
 
     });
 
     closeElem.addEventListener('click', () => {
         overlay.classList.remove('active');
         modalEmpty.classList.remove('active');
-        document.body.overflow = '';
+        document.body.style.overflow = '';
     });
 
 
