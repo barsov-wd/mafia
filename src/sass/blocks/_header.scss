@@ -4,9 +4,6 @@
     z-index: 1000;
     height: 120px;
     background-color: #fff;
-    // .humburger {
-    //     display: none;
-    // }
     .mobile-button {
         display: none;
     }
@@ -139,6 +136,7 @@
             }
         }
     }
+    &__city,
     &__city-text,
     &__contacts-title,
     &__contacts-phone,

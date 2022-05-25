@@ -1,14 +1,23 @@
+.overlay-sity {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: transparent;
+    transition: all 0.6s;
+    z-index: 1001;
+}
 .modal-sity {
-    position: absolute;
+    position: fixed;
     padding: 33px 0 48px 100px;
-    top: 285px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     width: 700px;
     height: 250px;
     background-color: #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
-    z-index: 10;
+    z-index: 1002;
     border-radius: 15px;
     &__close {
         position: absolute;
@@ -44,13 +53,13 @@
     }
 }
 .overlay {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     overflow-y: hidden;
     // top: 190px;
     top: 0;
-    background-color: rgba(#f2f2f2, .75);
+    background-color: rgba(#202123, .75);
     opacity: 0;
     visibility: hidden;
     z-index: -1;
@@ -62,10 +71,17 @@
         visibility: visible;
         opacity: 1;
         z-index: 1001;
-        overflow: hidden;
+        overflow: auto;
+    }
+    &__close {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 28%;
+        cursor: pointer;
     }
     .modal-empty {
-        position: fixed;
+        position: absolute;
         top: 0;
         right: -100%;
         padding: 49px 0 50px 49px;
@@ -117,7 +133,7 @@
         }
     }
     .modal-basket {
-        position: fixed;
+        position: absolute;
         top: 0;
         right: -100%;
         padding: 120px 65px 97px 65px;
@@ -240,10 +256,12 @@
         border-radius: 15px;
         transition: all 0.8s;
         z-index: 1001;
-        // overflow-y: scroll;
         &.active {
             right: 0;
             z-index: 1001;
+        }
+        &__mobile-back {
+            display: none;
         }
         &__close {
             position: absolute;
@@ -326,11 +344,31 @@
                 left: 0;
             }
         }
+        &__content-way {
+            position: relative;
+            padding-left: 24px;
+            font-size: 18px;
+            line-height: 22px;
+            color: $main-color;
+            margin-bottom: 15px;
+            img {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+            }
+        }
         &__input-row {
             width: 480px;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            .wrap {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+            }
         }
         &__form-input {
             margin-bottom: 10px;
@@ -398,6 +436,7 @@
             color: $main-color;
         }
         &__choice {
+            position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -407,6 +446,7 @@
             border-radius: 15px;
             background-color: #fff;
             margin-bottom: 10px;
+            cursor: pointer;
             &:last-child {
                 margin-bottom: 20px;
             }
@@ -424,11 +464,37 @@
             }
         }
         &__input-radio {
+            // opacity: 0;
             width: 24px;
             height: 24px;
+            // width: 30px;
+            // height: 30px;
             background-color: #e5e5e5;
             cursor: pointer;
+            // display: none;
         }
+        //     position: relative;
+        //     &::before {
+        //         content: '';
+        //         position: absolute;
+        //         display: block;
+        //         width: 30px;
+        //         height: 30px;
+        //         border: 2px solid red;
+        //         border-radius: 50%;
+        //         right: -100px;
+        //     }
+        //     &::after {
+        //         background-color: #26245E;
+        //         width: 20px;
+        //         height: 20px;
+        //         content: '';
+        //         display: none;
+        //         position: absolute;
+        //         left: 5px;
+        //         border-radius: 50%;
+        //     }
+        // }
         &__textarea {
             width: 500px;
             height: 80px;
@@ -444,6 +510,9 @@
             display: flex;
             justify-content: space-between;
         }
+        &__buttons-mobile {
+            display: none;
+        }
         &__button-back {
             width: 198px;
             height: 50px;
@@ -453,6 +522,7 @@
             color: #fff;
             font-size: 18px;
             line-height: 22px;
+            cursor: pointer;
         }
         &__button-order {
             width: 282px;
@@ -463,6 +533,7 @@
             font-size: 18px;
             line-height: 22px;
             color: #fff;
+            cursor: pointer;
         }
         &__way {
             width: 360px;

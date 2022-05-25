@@ -22,46 +22,65 @@ document.addEventListener('DOMContentLoaded', () => {
     // Modal sity 
 
     const modalTrigger = document.querySelectorAll('[data-city]'),
-          modalCity = document.querySelector('.modal-sity'),
-          closeSity = document.querySelector('[data-close]');
+        overlaySity = document.querySelector('.overlay-sity');
 
     modalTrigger.forEach(btn => {
         btn.addEventListener('click', openModal);
     });
 
-    closeSity.addEventListener('click', closeModal);
-
     function openModal() {
-        modalCity.classList.add('show');
-        modalCity.classList.remove('hide');
+        overlaySity.classList.add('show');
+        overlaySity.classList.remove('hide');
+        overlaySity.style.overflow = 'auto';
+        document.body.style.overflow = 'hidden';
     }
 
 
     function closeModal() {
-        modalCity.classList.add('hide');
-        modalCity.classList.remove('show');
+        overlaySity.classList.add('hide');
+        overlaySity.classList.remove('show');
+        document.body.style.overflow = '';
     }
+
+    overlaySity.addEventListener('click', (e) => {
+        if (e.target === overlaySity || e.target.getAttribute('data-close') == "") {
+            closeModal();
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.code == "Escape" && overlaySity.classList.contains('show')) {
+            closeModal();
+        }
+    });
+
 
 
     // Modal
+    function showModal(trigger, overlay, modal, close) {
+        const button = document.querySelector(trigger),
+            overlayModal = document.querySelector(overlay),
+            modalEmpty = document.querySelector(modal),
+            closeElem = document.querySelectorAll(close);
 
-    const headerButton = document.querySelector('.header__button'),
-        overlay = document.querySelector('.overlay'),
-        modalEmpty = document.querySelector('.modal-registration'),
-        closeElem = document.querySelector('.modal-registration__close');
+        button.addEventListener('click', () => {
+            overlayModal.classList.add('active');
+            modalEmpty.classList.add('active');
+            document.body.style.overflow = 'hidden';
 
-    headerButton.addEventListener('click', () => {
-        overlay.classList.add('active');
-        modalEmpty.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        });
 
-    });
+        closeElem.forEach(item => {
+            item.addEventListener('click', () => {
+                overlayModal.classList.remove('active');
+                modalEmpty.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    }
 
-    closeElem.addEventListener('click', () => {
-        overlay.classList.remove('active');
-        modalEmpty.classList.remove('active');
-        document.body.style.overflow = '';
-    });
+    showModal('.header__button', '.overlay', '.modal-registration', '[data-closesd]');
+    showModal('.mobile-button', '.overlay', '.modal-registration', '[data-closesd]');
 
 
     // Slider
@@ -174,20 +193,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Menu
     const humburger = document.querySelector('.humburger'),
           nav = document.querySelector('.nav'),
-          navMenu = document.querySelector('.nav__menu'),
+          navMenu = document.querySelector('.container__menu'),
           closeMenu = document.querySelector('.nav__close-icon');
 
     humburger.addEventListener('click', () => {
         nav.classList.add('active');
         navMenu.classList.add('active');
-        document.body.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
 
     });
 
     closeMenu.addEventListener('click', () => {
         nav.classList.remove('active');
         navMenu.classList.remove('active');
-        document.body.overflow = '';
+        document.body.style.overflow = '';
     });
 });
 
