@@ -365,8 +365,7 @@
                         </picture>
                         <h4 class="item-title item__title">ДЖУЛЬЕТА</h4>
                         <p class="pizza-item__descr">
-                            Тесто для пиццы, соус тар-тар, сыр моцарелла, сыр паулина, куриное филе, грибы шампиньоны,
-                            орегано
+                            Соус тар-тар, сыр моцарелла, сыр паулина, куриное филе, грибы шампиньоны, орегано
                         </p>
                     </div>
                     <div>
@@ -662,8 +661,8 @@
                         </picture>
                         <h4 class="item-title item__title">МИЧИГАН</h4>
                         <p class="pizza-item__descr">
-                            Сливочный соус, моцарелла, чеснок, огурцы соленые, красный лук, зелень, орегано, колбаски
-                            охотничьи, помидоры
+                            Фирменный томатный соус, бекон, моцарелла, говядина, соус барбекю, салями, сиртаки, красный
+                            лук, перец халапенью
                         </p>
                     </div>
                     <div>
@@ -719,7 +718,7 @@
                                 <span>В корзину</span>
                                 <img src="./icons/button-card/button-card-icon.svg" alt="">
                             </button>
-                            <span class="pizza__price">480₽</span>
+                            <span class="pizza__price">520₽</span>
                         </div>
                     </div>
                 </div>
@@ -795,7 +794,7 @@
                         </picture>
                         <h4 class="item-title item__title">ЛАКИ ЛУЧИАНО</h4>
                         <p class="pizza-item__descr">
-                            Фирменный томатный соус, моцарелла, помидоры, сушеный базилик
+                            Фирменный томатный соус, моцарелла, курица, бекон, чеснок, помидор, шампиньоны, перец
                         </p>
                     </div>
                     <div>
@@ -1214,7 +1213,7 @@
                             <source srcset="./img/set/set-4-mobile.png" media="(max-width: 576px)">
                             <img class="set-item__image" src="./img/set/set-4.png" alt="set-4">
                         </picture>
-                        <h4 class="item-title item__title">БОНИ И КЛАЙД</h4>
+                        <h4 class="item-title item__title">КОЗА НОСТРА</h4>
                         <p class="set-item__descr">
                             Гранд Карне, Джони BBQ, <br>
                             Дон Карлеоне <br>
@@ -1652,8 +1651,8 @@
                         </picture>
                         <h4 class="item-title item__title">КОМБО #1</h4>
                         <p class="combo-item__descr">
-                            Чизбургер, сытый майк <br>
-                            картофель фри <br>
+                            Чизбургер, сытый майк, <br>
+                            картофель фри, <br>
                             2 морса Клюквенных по 0,5
                         </p>
                     </div>
@@ -1681,7 +1680,7 @@
                         <h4 class="item-title item__title">КОМБО #2</h4>
                         <p class="combo-item__descr">
                             Дядя сэм, большой Бэн, <br>
-                            наггетсы 2 морса клубничных <br>
+                            наггетсы, 2 морса клубничных <br>
                             по 0,5
                         </p>
                     </div>
@@ -2180,7 +2179,7 @@
         <div class="overlay__close" data-closesd>
             <img src="./icons/modal/modal-closesd.svg" alt="modal-closesd">
         </div>
-        <div class="modal-empty">
+        <div class="modal-empty hide">
             <div class="modal-empty__close">
                 <img src="./icons/modal/modal-closesd.svg" alt="modal-closesd">
             </div>
@@ -2199,7 +2198,7 @@
             </div>
         </div>
 
-        <div class="modal-basket">
+        <div class="modal-basket hide">
             <div class="modal-empty__close">
                 <img src="./icons/modal/modal-closesd.svg" alt="modal-closesd">
             </div>
@@ -2310,31 +2309,33 @@
                                     <img src="./icons/modal/modal-icon-clock.svg" alt="modal-icon-clock">
                                 </div>
                                 <div class="wrap">
-                                    <div class="modal-registration__choice">
-                                        <label class="modal-registration__choice-label" for="contactChoice1">09.00-12.00</label>
-                                        <input class="modal-registration__input-radio" type="radio" id="contactChoice1"
-                                            name="contact" value="09.00-12.00">
-                                    </div>
-                                    <div class="modal-registration__choice">
-                                        <label class="modal-registration__choice-label" for="contactChoice1">12.00-15.00</label>
-                                        <input class="modal-registration__input-radio" type="radio" id="contactChoice2"
-                                            name="contact" value="12.00-15.00">
-                                    </div>
-                                    <div class="modal-registration__choice">
-                                        <label class="modal-registration__choice-label" for="contactChoice1">15.00-19.00</label>
-                                        <input class="modal-registration__input-radio" type="radio" id="contactChoice3"
-                                            name="contact" value="15.00-19.00">
-                                    </div>
-                                    <div class="modal-registration__choice">
-                                        <label class="modal-registration__choice-label" for="contactChoice1">19.00-23.00</label>
-                                        <input class="modal-registration__input-radio" type="radio" id="contactChoice4"
-                                            name="contact" value="19.00-23.00">
-                                    </div>
-                                    <div class="modal-registration__choice">
-                                        <label class="modal-registration__choice-label" for="contactChoice1">Как можно быстрее</label>
-                                        <input class="modal-registration__input-radio" type="radio" id="contactChoice5"
-                                            name="contact" value="Как можно быстрее">
-                                    </div>
+                                   <label class="custom-input modal-registration__choice" for="val1">
+                                       <input type="radio" name="demo" id="val1" value="val1" checked>
+                                       <div class="custom-radio"></div>
+                                       09.00 - 12.00
+                                   </label>
+
+                                   <label class="custom-input modal-registration__choice" for="val2">
+                                       <input type="radio" name="demo" id="val2" value="val2">
+                                       <div class="custom-radio"></div>
+                                       12.00 - 15.00
+                                   </label>
+
+                                   <label class="custom-input modal-registration__choice" for="val3">
+                                       <input type="radio" name="demo" id="val3" value="val3">
+                                       <div class="custom-radio"></div>
+                                       15.00 - 19.00
+                                   </label>
+                                   <label class="custom-input modal-registration__choice" for="val4">
+                                       <input type="radio" name="demo" id="val4" value="val4">
+                                       <div class="custom-radio"></div>
+                                       19.00 - 23.00
+                                   </label>
+                                   <label class="custom-input modal-registration__choice" for="val5">
+                                       <input type="radio" name="demo" id="val5" value="val5">
+                                       <div class="custom-radio"></div>
+                                       Как можно быстрее
+                                   </label>
                                 </div>
                             </div>
                             <div class="modal-registration__content-сomment">
@@ -2354,9 +2355,9 @@
                             Выберите способ оплаты
                         </div>
                         <form action="#" class="modal-registration__form modal-registration__form-two">
-                            <div class="modal-registration__way-payment">
+                            <label class="custom-input modal-registration__way-payment" for="contactChoice6">
                                 <div class="modal-registration__way-block">
-                                    <label class="modal-registration__choice-label" for="contactChoice6">Онлайн на сайте</д>
+                                    Онлайн на сайте
                                     <div class="modal-registration__way-icons">
                                         <img src="./icons/modal/icon-viza.svg" alt="icon-viza">
                                         <img src="./icons/modal/icon-mastercard.svg" alt="icon-mastercard">
@@ -2364,9 +2365,9 @@
                                         <img src="./icons/modal/icon-sber.svg" alt="icon-sber">
                                     </div>
                                 </div> 
-                                <input class="modal-registration__input-radio" type="radio" id="contactChoice6"
-                                    name="contact" value="Наличными"> 
-                            </div> 
+                                <input type="radio" id="contactChoice6" name="demo" value="val6">
+                                <div class="custom-radio"></div>
+                            </label> 
                             <input class="modal-registration__input-number" type="text" placeholder="Номер карты">
                             <input type="text" class="modal-registration__input-term" placeholder="Срок действия">
                             <input type="text" class="modal-registration__input-cvc" placeholder="CVC">
@@ -2374,32 +2375,34 @@
                                 Платеж безопасен. Мы не храним данные карт, все операции проводит CloudPayments -
                                 платежная система, сертифицированная по международному стандарту безопасности PCI DSS.
                             </p>
-                            <div class="modal-registration__choice modal-registration__choice-one">
-                                <label class="modal-registration__choice-label"
-                                    for="contactChoice7">Оплатой картой курьеру</label>
-                                <input class="modal-registration__input-radio" type="radio" id="contactChoice7"
-                                    name="contact" value="Наличными">
-                            </div>
-                            <div class="modal-registration__choice modal-registration__choice-two">
-                                <label class="modal-registration__choice-label"
-                                    for="contactChoice7">Наличными</label>
-                                <input class="modal-registration__input-radio" type="radio" id="contactChoice7"
-                                    name="contact" value="Наличными">
-                            </div>
+                            <label class="custom-input modal-registration__choice modal-registration__choice-one" for="contactChoice7">
+                                <input type="radio" id="contactChoice7" name="demo" value="val7">
+                                <div class="custom-radio"></div>
+                                Оплатой картой курьеру
+                            </label>
+                            <label class="custom-input modal-registration__choice modal-registration__choice-one"
+                                for="contactChoice8">
+                                <input type="radio" id="contactChoice8" name="demo" value="val8">
+                                <div class="custom-radio"></div>
+                                Наличными
+                            </label>
                         </form>
-                        <div class="modal-registration__choice modal-registration__choice-small modal-registration__choice-three">
-                            <label class="modal-registration__choice-label"
-                                for="contactChoice8">Сдача с <span>1000 ₽</span ₽an></label>
-                            <input class="modal-registration__input-radio" type="radio" id="contactChoice8"
-                                name="contact" value="Сдача с">
-                        </div>
-                        <div class="modal-registration__choice modal-registration__choice-small modal-registration__choice-four">
-                            <label class="modal-registration__choice-label"
-                                for="contactChoice8">Без сдачи</label>
-                            <input class="modal-registration__input-radio" type="radio" id="contactChoice8"
-                                name="contact" value="Без сдачи">
-                        </div>
-                    
+                        <form action="#">
+                            <label
+                                class="custom-input modal-registration__choice modal-registration__choice-small modal-registration__choice-three" for="contactChoice9">
+                                <input type="radio" id="contactChoice9"
+                                    name="demo" value="val9">
+                                <div class="custom-radio"></div>
+                                    Сдача с 1000 ₽
+                            </label>
+                            <label
+                                class="custom-input modal-registration__choice modal-registration__choice-small modal-registration__choice-three"
+                                for="contactChoice10">
+                                <input type="radio" id="contactChoice10" name="demo" value="val10">
+                                <div class="custom-radio"></div>
+                                Без сдачи
+                            </label>
+                        </form>
                     <div class="modal-registration__buttons-mobile">
                         <button class="modal-registration__back-mobile">Назад в корзину</button>
                         <button class="modal-registration__order-mobile">Оформить заказ на 1109 ₽</button>
@@ -2427,36 +2430,31 @@
                                     </div>
                                 </div>
                                 <div class="wrap">
-                                    <div class="modal-registration__choice">
-                                        <label class="modal-registration__choice-label"
-                                            for="contactChoice1">09.00-12.00</label>
-                                        <input class="modal-registration__input-radio" type="radio" id="contactChoice1"
-                                            name="contact" value="09.00-12.00">
-                                    </div>
-                                    <div class="modal-registration__choice">
-                                        <label class="modal-registration__choice-label"
-                                            for="contactChoice1">12.00-15.00</label>
-                                        <input class="modal-registration__input-radio" type="radio" id="contactChoice2"
-                                            name="contact" value="12.00-15.00">
-                                    </div>
-                                    <div class="modal-registration__choice">
-                                        <label class="modal-registration__choice-label"
-                                            for="contactChoice1">15.00-19.00</label>
-                                        <input class="modal-registration__input-radio" type="radio" id="contactChoice3"
-                                            name="contact" value="15.00-19.00">
-                                    </div>
-                                    <div class="modal-registration__choice">
-                                        <label class="modal-registration__choice-label"
-                                            for="contactChoice1">19.00-23.00</label>
-                                        <input class="modal-registration__input-radio" type="radio" id="contactChoice4"
-                                            name="contact" value="19.00-23.00">
-                                    </div>
-                                    <div class="modal-registration__choice">
-                                        <label class="modal-registration__choice-label" for="contactChoice1">Как можно
-                                            быстрее</label>
-                                        <input class="modal-registration__input-radio" type="radio" id="contactChoice5"
-                                            name="contact" value="Как можно быстрее">
-                                    </div>
+                                    <label class="custom-input modal-registration__choice" for="val11">
+                                        <input type="radio" name="demo" id="val1" value="val11" checked>
+                                        <div class="custom-radio"></div>
+                                        09.00 - 12.00
+                                    </label>
+                                    <label class="custom-input modal-registration__choice" for="val12">
+                                        <input type="radio" name="demo" id="val12" value="val12">
+                                        <div class="custom-radio"></div>
+                                        12.00 - 15.00
+                                    </label>
+                                    <label class="custom-input modal-registration__choice" for="val13">
+                                        <input type="radio" name="demo" id="val13" value="val13">
+                                        <div class="custom-radio"></div>
+                                        15.00 - 19.00
+                                    </label>
+                                    <label class="custom-input modal-registration__choice" for="val14">
+                                        <input type="radio" name="demo" id="val14" value="val14">
+                                        <div class="custom-radio"></div>
+                                        19.00 - 23.00
+                                    </label>
+                                    <label class="custom-input modal-registration__choice" for="val15">
+                                        <input type="radio" name="demo" id="val15" value="val15">
+                                        <div class="custom-radio"></div>
+                                        Как можно быстрее
+                                    </label>
                                 </div>
                             </div>
                             <div class="modal-registration__content-сomment">
@@ -2476,19 +2474,19 @@
                             Выберите способ оплаты
                         </div>
                         <form action="#" class="modal-registration__form">
-                            <div class="modal-registration__way-payment">
+                            <label class="custom-input modal-registration__way-payment" for="contactChoice16">
                                 <div class="modal-registration__way-block">
-                                    <label class="modal-registration__choice-label" for="contactChoice6">Онлайн на сайте</д>
-                                        <div class="modal-registration__way-icons">
-                                            <img src="./icons/modal/icon-viza.svg" alt="icon-viza">
-                                            <img src="./icons/modal/icon-mastercard.svg" alt="icon-mastercard">
-                                            <img src="./icons/modal/icon-qiwi.svg" alt="icon-qiwi">
-                                            <img src="./icons/modal/icon-sber.svg" alt="icon-sber">
-                                        </div>
+                                    Онлайн на сайте
+                                    <div class="modal-registration__way-icons">
+                                        <img src="./icons/modal/icon-viza.svg" alt="icon-viza">
+                                        <img src="./icons/modal/icon-mastercard.svg" alt="icon-mastercard">
+                                        <img src="./icons/modal/icon-qiwi.svg" alt="icon-qiwi">
+                                        <img src="./icons/modal/icon-sber.svg" alt="icon-sber">
+                                    </div>
                                 </div>
-                                <input class="modal-registration__input-radio" type="radio" id="contactChoice6"
-                                    name="contact" value="Наличными">
-                            </div>
+                                <input type="radio" id="contactChoice16" name="demo" value="val16">
+                                <div class="custom-radio"></div>
+                            </label>
                             <input class="modal-registration__input-number" type="text" placeholder="Номер карты">
                             <input type="text" class="modal-registration__input-term" placeholder="Срок действия">
                             <input type="text" class="modal-registration__input-cvc" placeholder="CVC">
@@ -2496,11 +2494,11 @@
                                 Платеж безопасен. Мы не храним данные карт, все операции проводит CloudPayments -
                                 платежная система, сертифицированная по международному стандарту безопасности PCI DSS.
                             </p>
-                            <div class="modal-registration__choice">
-                                <label class="modal-registration__choice-label" for="contactChoice7">Наличными</label>
-                                <input class="modal-registration__input-radio" type="radio" id="contactChoice7"
-                                    name="contact" value="Наличными">
-                            </div>
+                            <label class="custom-input modal-registration__choice" for="contactChoice17">
+                                <input type="radio" id="contactChoice17" name="demo" value="val17">
+                                <div class="custom-radio"></div>
+                                Наличными
+                            </label>
                         </form>
                     </div>
                 </div>

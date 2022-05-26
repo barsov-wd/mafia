@@ -123,7 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     new Swiper('.sliders', {
         navigation: {
-            nextEl: '.slider__arrow-next'
+            nextEl: '.slider__arrow-next',
+            prevEl: '.slider__arrow-prev'
         },
         slidesPerView: 4,
         spaceBetween: 20,
@@ -194,7 +195,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const humburger = document.querySelector('.humburger'),
           nav = document.querySelector('.nav'),
           navMenu = document.querySelector('.container__menu'),
-          closeMenu = document.querySelector('.nav__close-icon');
+          closeMenu = document.querySelector('.nav__close-icon'),
+          closeElem = document.querySelectorAll('.nav__menu-item');
 
     humburger.addEventListener('click', () => {
         nav.classList.add('active');
@@ -208,6 +210,14 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.remove('active');
         document.body.style.overflow = '';
     });
+
+    closeElem.forEach(item => {
+        item.addEventListener('click', () => {
+            nav.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    })
 });
 
 

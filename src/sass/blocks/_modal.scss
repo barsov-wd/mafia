@@ -464,37 +464,12 @@
             }
         }
         &__input-radio {
-            // opacity: 0;
             width: 24px;
             height: 24px;
-            // width: 30px;
-            // height: 30px;
             background-color: #e5e5e5;
             cursor: pointer;
             // display: none;
         }
-        //     position: relative;
-        //     &::before {
-        //         content: '';
-        //         position: absolute;
-        //         display: block;
-        //         width: 30px;
-        //         height: 30px;
-        //         border: 2px solid red;
-        //         border-radius: 50%;
-        //         right: -100px;
-        //     }
-        //     &::after {
-        //         background-color: #26245E;
-        //         width: 20px;
-        //         height: 20px;
-        //         content: '';
-        //         display: none;
-        //         position: absolute;
-        //         left: 5px;
-        //         border-radius: 50%;
-        //     }
-        // }
         &__textarea {
             width: 500px;
             height: 80px;
