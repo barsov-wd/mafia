@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-
     // Modal
     function showModal(trigger, overlay, modal, close) {
         const button = document.querySelector(trigger),
@@ -198,26 +197,34 @@ document.addEventListener('DOMContentLoaded', () => {
           closeMenu = document.querySelector('.nav__close-icon'),
           closeElem = document.querySelectorAll('.nav__menu-item');
 
-    humburger.addEventListener('click', () => {
+    function openMenu() {
         nav.classList.add('active');
         navMenu.classList.add('active');
         document.body.style.overflow = 'hidden';
+    }
 
-    });
-
-    closeMenu.addEventListener('click', () => {
+    function closesdMenu() {
         nav.classList.remove('active');
         navMenu.classList.remove('active');
         document.body.style.overflow = '';
-    });
+    }
+
+    humburger.addEventListener('click', openMenu);
+
+    closeMenu.addEventListener('click', closesdMenu);
 
     closeElem.forEach(item => {
         item.addEventListener('click', () => {
-            nav.classList.remove('active');
-            navMenu.classList.remove('active');
-            document.body.style.overflow = '';
+            closesdMenu();
         });
-    })
+    });
+
+
+    nav.addEventListener('click', (e) => {
+        if (e.target === nav) {
+            closesdMenu();
+        }
+    });
 });
 
 
