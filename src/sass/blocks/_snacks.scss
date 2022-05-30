@@ -3,30 +3,35 @@
     padding-top: 120px;
     background-color: #e5e5e5;
     z-index: 2;
+
     &__image-right {
         position: absolute;
         top: 70px;
         right: 0;
     }
+
     &__image-middle {
         position: absolute;
         bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
     }
+
     &__image-bottom {
         position: absolute;
         bottom: -370px;
         right: 0;
-    } 
+    }
+
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(4, 340px);
-        grid-template-rows: repeat(2, minmax(430px, auto));
+        grid-template-rows: repeat(1, minmax(430px, auto));
         grid-auto-rows: minmax(430px, auto);
         column-gap: 20px;
         row-gap: 30px;
     }
+
     &-item {
         display: flex;
         flex-direction: column;
@@ -38,19 +43,23 @@
         border-radius: 15px;
         text-align: center;
     }
+
     &-item__image {
         margin-bottom: 20px;
     }
+
     &-item__descr {
         max-width: 301px;
         margin: 0 auto;
     }
+
     &__inner {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
     }
+
     &__price {
         font-weight: 900;
         font-size: 33px;
