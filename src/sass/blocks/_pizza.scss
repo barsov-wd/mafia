@@ -23,7 +23,7 @@
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(4, 340px);
-        grid-template-rows: repeat(6, minmax(491px, auto));
+        grid-template-rows: repeat(1, minmax(491px, auto));
         grid-auto-rows: minmax(491px, auto);
         column-gap: 20px;
         row-gap: 25px;
