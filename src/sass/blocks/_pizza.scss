@@ -3,24 +3,56 @@
     padding-top: 120px;
     background-color: #e5e5e5;
     z-index: 3;
+
     &__absolute-bottom {
         position: absolute;
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
     }
+
     &__absolute-mafia {
         position: absolute;
         right: 0;
         top: 66px;
         z-index: -1;
     }
+
     &__absolute-right {
         position: absolute;
         bottom: -302px;
         right: 0;
     }
+
+    &__cheeses-absolute {
+        position: absolute;
+        top: 26%;
+        left: 150px;
+        z-index: -1;
+    }
+
+    &__michigan-image {
+        position: absolute;
+        right: 65px;
+        top: 41%;
+    }
+
+    &__mafia-image {
+        position: absolute;
+        left: 0;
+        top: 49%;
+        z-index: -1;
+    }
+
+    &__corleone-image {
+        position: absolute;
+        bottom: 15%;
+        left: 120px;
+        z-index: -1;
+    }
+
     &__wrapper {
+        position: relative;
         display: grid;
         grid-template-columns: repeat(4, 340px);
         grid-template-rows: repeat(1, minmax(491px, auto));
@@ -28,6 +60,7 @@
         column-gap: 20px;
         row-gap: 25px;
     }
+
     &-item {
         display: flex;
         flex-direction: column;
@@ -37,63 +70,50 @@
         box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
         text-align: center;
+
         &__four-cheeses {
             position: relative;
         }
-        &__cheeses-absolute {
-            position: absolute;
-            top: 50%;
-            left: -100px;
-            z-index: -1;
-        }
+
         &__michigan {
             position: relative;
         }
-        &__michigan-image {
-            position: absolute;
-            right: -170px;
-            bottom: 70px;
-        }
+
         &__mafia {
             position: relative;
         }
-        &__mafia-image {
-            position: absolute;
-            right: 250px;
-            top: 80px;
-            z-index: -1;
-        }
+
         &__don-corleone {
             position: relative;
         }
-        &__corleone-image {
-            position: absolute;
-            bottom: 70px;
-            left: -120px;
-            z-index: -1;
-        }
+
     }
+
     &-item__image {
         display: block;
         margin: 0 auto;
         margin-bottom: 20px;
     }
+
     &-item__descr {
         font-size: 18px;
         line-height: 22px;
         color: $main-color;
         margin-bottom: 30px;
     }
+
     &__inner {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
     }
+
     &-item__inner {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     &__price {
         font-weight: 900;
         font-size: 33px;

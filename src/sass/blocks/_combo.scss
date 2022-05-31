@@ -9,7 +9,14 @@
         right: 0;
     }
 
+    &__one-image {
+        position: absolute;
+        bottom: 27%;
+        left: 50px;
+    }
+
     &__wrapper {
+        position: relative;
         display: grid;
         grid-template-columns: repeat(3, 340px);
         grid-auto-rows: minmax(510px, auto);
@@ -31,12 +38,6 @@
             position: relative;
         }
 
-        &__one-image {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: -200px;
-        }
     }
 
     &-item__image {

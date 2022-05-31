@@ -16,10 +16,15 @@
 
 @media (max-width: 1800px) {
     .pizza {
-        &-item {
-            &__michigan-image {
-                right: -111px;
-                z-index: -1;
+        &__michigan-image {
+            right: 30px;
+        }
+
+        &__absolute-right {
+            bottom: -250px;
+
+            img {
+                width: 500px;
             }
         }
     }
@@ -28,6 +33,16 @@
         &-item {
             &__ben-image {
                 right: -110px;
+            }
+        }
+    }
+
+    .snacks {
+        &__image-bottom {
+            bottom: -325px;
+
+            img {
+                width: 370px;
             }
         }
     }
@@ -96,6 +111,10 @@
     .set {
         position: relative;
         z-index: 2;
+
+        &__one-image {
+            left: 15px;
+        }
     }
 
     .pizza__wrapper,
@@ -174,14 +193,8 @@
             }
         }
 
-        &-item {
-            &__michigan-image {
-                display: none;
-            }
-
-            &__mafia-image {
-                right: 150px;
-            }
+        &__michigan-image {
+            right: 15px;
         }
 
         &__wrapper {
@@ -193,6 +206,10 @@
     .set {
         &__wrapper {
             grid-auto-rows: minmax(481px, auto);
+        }
+
+        &__one-image {
+            left: 8px;
         }
     }
 
@@ -216,11 +233,8 @@
     .combo {
         grid-auto-rows: minmax(490px, auto);
 
-        &-item {
-            &__one-image {
-                left: -160px;
-                z-index: 0;
-            }
+        &__one-image {
+            left: 5px;
         }
     }
 
@@ -288,6 +302,12 @@
 
         &__arrow-next {
             right: 4px;
+        }
+    }
+
+    .burgers {
+        &__ben-image {
+            right: 8px;
         }
     }
 
@@ -360,6 +380,12 @@
     .pizza__wrapper {
         grid-template-rows: repeat(1, minmax(456px, auto));
         grid-auto-rows: minmax(456px, auto);
+    }
+
+    .set {
+        &__one-image {
+            display: none;
+        }
     }
 
     .pizza__wrapper,
@@ -474,7 +500,11 @@
         }
 
         &__absolute-right {
-            bottom: -265px;
+            bottom: -250px;
+
+            img {
+                width: 490px;
+            }
         }
     }
 
@@ -497,14 +527,8 @@
             grid-auto-rows: minmax(500px, auto);
         }
 
-        &-item {
-            &__royal-image {
-                left: -430px;
-            }
-
-            &__chicken-image {
-                right: -350px;
-            }
+        &__chicken-image {
+            right: 350px;
         }
     }
 
@@ -635,14 +659,6 @@
         }
     }
 
-    .burgers {
-        &-item {
-            &__royal-image {
-                left: -475px;
-            }
-        }
-    }
-
     .combo {
         &__image-right {
             img {
@@ -748,6 +764,10 @@
 
     .pizza {
         padding-top: 100px;
+
+        &__absolute-bottom {
+            left: 46%;
+        }
 
         &__wrapper {
             grid-template-columns: repeat(2, 340px);
@@ -1265,10 +1285,10 @@
         }
 
         &__absolute-right {
-            bottom: -230px;
+            bottom: -220px;
 
             img {
-                width: 350px;
+                width: 340px;
             }
         }
 
@@ -1281,11 +1301,10 @@
     .burgers {
         padding-top: 95px;
 
-        &-item {
-            &__chicken-image {
-                display: none;
-            }
+        &__chicken-image {
+            display: none;
         }
+
     }
 
     .combo {
@@ -1304,7 +1323,7 @@
         }
 
         &__image-bottom {
-            bottom: -240px;
+            bottom: -219px;
 
             img {
                 width: 250px;
@@ -1559,6 +1578,18 @@
     .pizza {
         padding-top: 85px;
 
+        &__corleone-image {
+            img {
+                width: 120px;
+            }
+        }
+
+        &__mafia-image {
+            img {
+                width: 230px;
+            }
+        }
+
         &__wrapper {
             justify-content: center;
             grid-template-columns: repeat(1, 340px);
@@ -1569,12 +1600,6 @@
 
         &-item {
             text-align: center;
-
-            &__corleone-image {
-                img {
-                    width: 120px;
-                }
-            }
         }
 
         &__absolute-right {
@@ -1613,14 +1638,12 @@
             column-gap: 0;
         }
 
-        &-item {
-            &__royal-image {
-                display: none;
-            }
+        &__royal-image {
+            display: none;
+        }
 
-            &__chicken-image {
-                display: none;
-            }
+        &__chicken-image {
+            display: none;
         }
     }
 
@@ -2023,6 +2046,14 @@
     .pizza {
         padding-top: 70px;
 
+        &__mafia-image {
+            display: none;
+        }
+
+        &__michigan-image {
+            display: none;
+        }
+
         &__wrapper {
             grid-template-columns: repeat(1, 100%);
             grid-template-rows: repeat(1, minmax(312px, auto));
@@ -2264,6 +2295,10 @@
             row-gap: 15px;
         }
 
+        &__one-image {
+            display: none;
+        }
+
         &-item {
             padding: 20px 13px;
 
@@ -2340,6 +2375,10 @@
             grid-template-rows: repeat(1, minmax(272px, auto));
             grid-auto-rows: minmax(272px, auto);
             row-gap: 15px;
+        }
+
+        &__image-one {
+            display: none;
         }
 
         &-item {

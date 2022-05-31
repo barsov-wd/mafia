@@ -10,7 +10,20 @@
         right: 0;
     }
 
+    &__image-one {
+        position: absolute;
+        left: 0;
+        top: 25%;
+    }
+
+    &__strawberry-image {
+        position: absolute;
+        right: 482px;
+        bottom: 152px;
+    }
+
     &__wrapper {
+        position: relative;
         display: grid;
         grid-template-columns: repeat(4, 340px);
         grid-template-rows: repeat(1, minmax(475px, auto));
@@ -34,21 +47,10 @@
             position: relative;
         }
 
-        &__image-one {
-            position: absolute;
-            left: -240px;
-            bottom: 30px;
-        }
-
         &__strawberry {
             position: relative;
         }
 
-        &__strawberry-image {
-            position: absolute;
-            right: -480px;
-            bottom: 0;
-        }
     }
 
     &-item__image {
