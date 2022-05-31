@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Counter
 
     const btnMinus = document.querySelectorAll('[data-action="minus"]'),
-          btnPlus = document.querySelectorAll('[data-action="plus"]');
-          counter = document.querySelectorAll('[data-counter]');
+        btnPlus = document.querySelectorAll('[data-action="plus"]');
+    counter = document.querySelectorAll('[data-counter]');
 
     btnMinus.forEach((item, i) => {
         item.addEventListener('click', () => {
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
             992: {
                 slidesPerView: 1,
                 loop: true,
-                    autoplay: {
+                autoplay: {
                     delay: 4000
                 }
             },
@@ -192,10 +192,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Menu
     const humburger = document.querySelector('.humburger'),
-          nav = document.querySelector('.nav'),
-          navMenu = document.querySelector('.container__menu'),
-          closeMenu = document.querySelector('.nav__close-icon'),
-          closeElem = document.querySelectorAll('.nav__menu-item');
+        nav = document.querySelector('.nav'),
+        navMenu = document.querySelector('.container__menu'),
+        closeMenu = document.querySelector('.nav__close-icon'),
+        closeElem = document.querySelectorAll('.nav__menu-item');
 
     function openMenu() {
         nav.classList.add('active');
@@ -226,5 +226,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
-
