@@ -78,8 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    showModal('.header__button', '.overlay', '.modal-registration', '[data-closesd]');
-    showModal('.mobile-button', '.overlay', '.modal-registration', '[data-closesd]');
+    showModal('.header__button', '.overlay', '.modal-basket', '[data-closesd]');
+    showModal('.mobile-button', '.overlay', '.modal-basket', '[data-closesd]');
 
 
     // Slider

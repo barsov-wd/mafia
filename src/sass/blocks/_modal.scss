@@ -85,14 +85,6 @@
         overflow: auto;
     }
 
-    &__close {
-        position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 28%;
-        cursor: pointer;
-    }
-
     .modal-empty {
         position: absolute;
         top: 0;
@@ -119,11 +111,11 @@
         }
 
         &__close {
-            position: absolute;
+            position: fixed;
             top: 50%;
             transform: translateY(-50%);
             z-index: 1002;
-            left: -60px;
+            left: 54%;
             cursor: pointer;
         }
 
@@ -280,7 +272,19 @@
             line-height: 26px;
             color: $main-color;
         }
+
+        &__close {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1002;
+            left: 53%;
+            cursor: pointer;
+            z-index: 1003;
+        }
+
     }
+
 
     .modal-registration {
         position: absolute;
@@ -307,11 +311,11 @@
         }
 
         &__close {
-            position: absolute;
+            position: fixed;
             top: 50%;
             transform: translateY(-50%);
             z-index: 1002;
-            left: -60px;
+            left: 28%;
             cursor: pointer;
             z-index: 1003;
         }
