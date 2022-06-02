@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         speed: 500,
         breakpoints: {
             320: {
-                slidesPerView: 1.3,
+                slidesPerView: 1.2,
                 spaceBetween: 10
             },
             577: {
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         breakpoints: {
             320: {
-                slidesPerView: 1.3,
+                slidesPerView: 1.2,
                 spaceBetween: 10
             },
             350: {

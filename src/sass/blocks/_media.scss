@@ -903,12 +903,12 @@
         }
 
         .slider__arrow-next {
-            right: -10px;
+            right: -7px;
             z-index: 100;
         }
 
         .slider__arrow-prev {
-            left: -10px;
+            left: -7px;
             z-index: 100;
         }
     }
@@ -2485,6 +2485,10 @@
         }
 
         &__michigan-image {
+            display: none;
+        }
+
+        &__cheeses-absolute {
             display: none;
         }
 
