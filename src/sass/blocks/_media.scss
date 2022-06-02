@@ -1,5 +1,7 @@
 @media (max-width: 1920px) {
     .overlay {
+        position: fixed;
+
         .modal-empty {
             &__close {
                 left: 52%;
@@ -30,6 +32,8 @@
     }
 
     .overlay {
+        position: fixed;
+
         .modal-empty {
             &__close {
                 left: 51%;
@@ -84,6 +88,8 @@
     }
 
     .overlay {
+        position: fixed;
+
         .modal-empty {
             &__close {
                 left: 49%;
@@ -106,6 +112,8 @@
 
 @media (max-width: 1750px) {
     .overlay {
+        position: fixed;
+
         .modal-empty {
             &__close {
                 left: 48%;
@@ -128,6 +136,8 @@
 
 @media (max-width: 1700px) {
     .overlay {
+        position: fixed;
+
         .modal-empty {
             &__close {
                 left: 47%;
@@ -229,6 +239,8 @@
     }
 
     .overlay {
+        position: fixed;
+
         .modal-empty {
             &__close {
                 left: 45%;
@@ -371,7 +383,7 @@
     }
 
     .overlay {
-        position: absolute;
+        position: fixed;
         overflow: hidden;
 
         .modal-empty {
@@ -404,6 +416,8 @@
 
 @media (max-width: 1550px) {
     .overlay {
+        position: fixed;
+
         .modal-empty {
             &__close {
                 left: 41%;
@@ -442,6 +456,8 @@
     }
 
     .overlay {
+        position: fixed;
+
         .modal-empty {
             &__close {
                 left: 39%;
@@ -542,6 +558,8 @@
     }
 
     .overlay {
+        position: fixed;
+
         .modal-empty {
             &__close {
                 left: 36%;
@@ -713,6 +731,7 @@
     }
 
     .overlay {
+        position: fixed;
 
         .modal-empty {
             width: 822px;
@@ -760,7 +779,10 @@
 }
 
 @media (max-width: 1320px) {
+
     .overlay {
+        position: fixed;
+
         .modal-empty {
             &__close {
                 left: 31%;
@@ -862,7 +884,7 @@
     }
 
     .overlay {
-
+        position: fixed;
 
         .modal-empty {
             width: 782px;
@@ -2253,6 +2275,7 @@
         }
 
         .modal-basket {
+
             &__close {
                 left: 20%;
             }
@@ -2268,6 +2291,7 @@
 
 @media (max-width: 685px) {
     .overlay {
+
         .modal-empty {
             &__close {
                 left: 15%;
@@ -2275,6 +2299,7 @@
         }
 
         .modal-basket {
+
             &__close {
                 left: 13%;
             }
@@ -2320,6 +2345,7 @@
         position: fixed;
         z-index: 1000;
         height: 69px;
+        width: 100%;
 
         &__wrapper {
             height: 69px;
@@ -2489,6 +2515,10 @@
         }
 
         &__cheeses-absolute {
+            display: none;
+        }
+
+        &__corleone-image {
             display: none;
         }
 
@@ -2696,6 +2726,10 @@
             row-gap: 15px;
         }
 
+        &__ben-image {
+            display: none;
+        }
+
         &-item {
             &__descr {
                 font-size: 11px;
@@ -2816,6 +2850,10 @@
         }
 
         &__image-one {
+            display: none;
+        }
+
+        &__strawberry-image {
             display: none;
         }
 
@@ -3243,7 +3281,7 @@
 
         .modal-basket {
             border-radius: 0;
-            width: 100vw;
+            width: 100%;
             height: 100vh;
             padding: 16px 10px 0 10px;
             overflow: auto;
